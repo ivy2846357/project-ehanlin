@@ -1,6 +1,17 @@
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+/*------------------- bootstrap 環境建立 -------------------*/
 
+@import '../../../node_modules/bootstrap/scss/functions';
+@import './helpers/variables';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 
-@import './layout/index.scss'
+/*------------------- base -------------------*/
+
+@import './base/base';
+
+/*------------------- layout -------------------*/
+
+@import './layout/index.scss';
+
+/*------------------- compoments -------------------*/
+
+@import './components/effect';
