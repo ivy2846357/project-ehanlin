@@ -10,10 +10,11 @@
 
 /*------------------- layout -------------------*/
 
-@import './layout/index.scss';
+@import './layout/sign';
 
 /*------------------- compoments -------------------*/
 
+@import './components/btn';
 @import './components/effect';
 @import './components/educationPic';
 @import './components/cart';

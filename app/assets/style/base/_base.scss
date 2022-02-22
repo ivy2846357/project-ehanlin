@@ -4,10 +4,15 @@ $primary: #0F5C9E;
 $secondary: #BEE1FF;
 $emphasize: #F28121;
 $auxiliary-dark: #084477;
+$enabled: rgba(0, 0, 0, .5);
 
 
 /*------------------- 網頁共用樣式 -------------------*/
 
 a {
     text-decoration: none;
+}
+
+.text-inactive {
+    color: $enabled;
 }

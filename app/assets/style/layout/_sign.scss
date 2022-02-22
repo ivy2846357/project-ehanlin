@@ -1,0 +1,49 @@
+/*------------------- 登入註冊內容 -------------------*/
+
+.signForm {
+    padding: 5rem 0;
+
+    &__title {
+        position: relative;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 10rem;
+            height: 1px;
+            background-color: $enabled;
+            top: 50%;
+        }
+
+        &::after {
+            left: 0;
+        }
+
+        &::before {
+            right: 0;
+        }
+    }
+
+    &__state {
+        position: relative;
+        padding-bottom: .75rem;
+    }
+
+    &__enableLine {
+        transition: all .3s;
+        position: absolute;
+        width: 4rem;
+        height: .25rem;
+        background-color: $primary;
+        top: 3.4rem;
+
+        &--register {
+            right: 6.2rem;
+        }
+
+        &--login {
+            right: 22.7rem;
+        }
+    }
+}
