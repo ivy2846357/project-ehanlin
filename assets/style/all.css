@@ -30,6 +30,7 @@
   --bs-dark: #212529;
   --bs-emphasize: #F28121;
   --bs-auxiliary-dark: #084477;
+  --bs-enabled: rgba(0, 0, 0, 0.5);
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3848,6 +3849,47 @@ fieldset:disabled .btn {
   border-color: #084477;
 }
 
+.btn-enabled {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-enabled:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.575);
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-check:focus + .btn-enabled, .btn-enabled:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.575);
+  border-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(88, 88, 88, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(88, 88, 88, 0.5);
+}
+
+.btn-check:checked + .btn-enabled,
+.btn-check:active + .btn-enabled, .btn-enabled:active, .btn-enabled.active,
+.show > .btn-enabled.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.625);
+}
+
+.btn-check:checked + .btn-enabled:focus,
+.btn-check:active + .btn-enabled:focus, .btn-enabled:active:focus, .btn-enabled.active:focus,
+.show > .btn-enabled.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(88, 88, 88, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(88, 88, 88, 0.5);
+}
+
+.btn-enabled:disabled, .btn-enabled.disabled {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
 .btn-outline-primary {
   color: #0F5C9E;
   border-color: #0F5C9E;
@@ -4185,6 +4227,40 @@ fieldset:disabled .btn {
 
 .btn-outline-auxiliary-dark:disabled, .btn-outline-auxiliary-dark.disabled {
   color: #084477;
+  background-color: transparent;
+}
+
+.btn-outline-enabled {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-enabled:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-check:focus + .btn-outline-enabled, .btn-outline-enabled:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-check:checked + .btn-outline-enabled,
+.btn-check:active + .btn-outline-enabled, .btn-outline-enabled:active, .btn-outline-enabled.active, .btn-outline-enabled.dropdown-toggle.show {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-check:checked + .btn-outline-enabled:focus,
+.btn-check:active + .btn-outline-enabled:focus, .btn-outline-enabled:active:focus, .btn-outline-enabled.active:focus, .btn-outline-enabled.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-enabled:disabled, .btn-outline-enabled.disabled {
+  color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
 }
 
@@ -5875,6 +5951,16 @@ fieldset:disabled .btn {
   color: #042139;
 }
 
+.alert-enabled {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(235, 235, 235, 0.9);
+  border-color: rgba(223, 223, 223, 0.85);
+}
+
+.alert-enabled .alert-link {
+  color: rgba(0, 0, 0, 0.76);
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6369,6 +6455,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #052947;
   border-color: #052947;
+}
+
+.list-group-item-enabled {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(235, 235, 235, 0.9);
+}
+
+.list-group-item-enabled.list-group-item-action:hover, .list-group-item-enabled.list-group-item-action:focus {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(207, 207, 207, 0.91);
+}
+
+.list-group-item-enabled.list-group-item-action.active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-close {
@@ -7602,6 +7704,14 @@ fieldset:disabled .btn {
   color: #06365f;
 }
 
+.link-enabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.link-enabled:hover, .link-enabled:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -8016,6 +8126,10 @@ fieldset:disabled .btn {
 
 .border-auxiliary-dark {
   border-color: #084477 !important;
+}
+
+.border-enabled {
+  border-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .border-white {
@@ -9187,6 +9301,10 @@ fieldset:disabled .btn {
   color: #084477 !important;
 }
 
+.text-enabled {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -9249,6 +9367,10 @@ fieldset:disabled .btn {
 
 .bg-auxiliary-dark {
   background-color: #084477 !important;
+}
+
+.bg-enabled {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .bg-body {
@@ -13256,14 +13378,68 @@ a {
   text-decoration: none;
 }
 
+.text-inactive {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /*------------------- layout -------------------*/
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+/*------------------- 登入註冊內容 -------------------*/
+.signForm {
+  padding: 5rem 0;
+}
+
+.signForm__title {
+  position: relative;
+}
+
+.signForm__title::after, .signForm__title::before {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+}
+
+.signForm__title::after {
+  left: 0;
+}
+
+.signForm__title::before {
+  right: 0;
+}
+
+.signForm__state {
+  position: relative;
+  padding-bottom: .75rem;
+}
+
+.signForm__enableLine {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  width: 4rem;
+  height: .25rem;
+  background-color: #0F5C9E;
+  top: 3.4rem;
+}
+
+.signForm__enableLine--register {
+  right: 6.2rem;
+}
+
+.signForm__enableLine--login {
+  right: 22.7rem;
 }
 
 /*------------------- compoments -------------------*/
+/*------------------- 自訂按鈕元件 -------------------*/
+.btn {
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+}
+
 .effect__shadow {
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
