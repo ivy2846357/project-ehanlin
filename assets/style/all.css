@@ -13450,11 +13450,15 @@ a {
 }
 
 .signForm__enableLine--register {
-  right: 6.2rem;
+  -webkit-transform: translateX(7.85rem);
+      -ms-transform: translateX(7.85rem);
+          transform: translateX(7.85rem);
 }
 
 .signForm__enableLine--login {
-  right: 22.7rem;
+  -webkit-transform: translateX(-8rem);
+      -ms-transform: translateX(-8rem);
+          transform: translateX(-8rem);
 }
 
 .signForm__alert {
@@ -13486,7 +13490,9 @@ a {
 }
 
 .signFormContent {
-  border: 1px solid black;
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+  background-color: #fff;
 }
 
 /*------------------- footer 樣式 -------------------*/
