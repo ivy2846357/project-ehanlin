@@ -13397,8 +13397,8 @@ a {
   position: relative;
   background-image: url("../images/online-education.svg");
   background-repeat: no-repeat;
-  background-position: 90% 0;
-  background-size: 55rem;
+  background-position: 90% center;
+  background-size: 50%;
 }
 
 .signForm__background::after {
