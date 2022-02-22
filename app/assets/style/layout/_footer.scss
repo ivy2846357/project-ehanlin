@@ -1,0 +1,27 @@
+/*------------------- footer 樣式 -------------------*/
+
+.footer {
+    padding: 4.5rem 0;
+
+    &__title {
+        font-size: 3rem;
+    }
+
+    &__subTitle {
+        font-size: 1.5rem;
+    }
+
+    &__point {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    &__iconLink {
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+
+    &__link {
+        color: #fff;
+    }
+}

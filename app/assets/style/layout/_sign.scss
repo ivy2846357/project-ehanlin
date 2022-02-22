@@ -3,6 +3,8 @@
 .signForm {
     padding: 5rem 0 7rem 0;
 
+    /*----------- 淺藍背景 -----------*/
+
     &__background {
         position: relative;
 
@@ -17,6 +19,8 @@
             z-index: -1;
         }
     }
+
+    /*----------- 登入註冊標題 -----------*/
 
     &__title {
         position: relative;
@@ -40,6 +44,8 @@
         }
     }
 
+    /*----------- 顯示狀態 -----------*/
+
     &__state {
         position: relative;
         padding-bottom: .75rem;
@@ -62,6 +68,8 @@
         }
     }
 
+    /*----------- 圖片文字框 -----------*/
+
     &__alert {
         position: absolute;
         display: block;
@@ -69,6 +77,8 @@
         background-color: $talk-block;
         border-radius: 2rem;
     }
+
+    /*----------- 文字框位置 -----------*/
 
     &__alertTopLeft {
         top: 8%;
