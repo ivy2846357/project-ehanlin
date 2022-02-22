@@ -1,7 +1,22 @@
 /*------------------- 登入註冊內容 -------------------*/
 
 .signForm {
-    padding: 5rem 0;
+    padding: 5rem 0 7rem 0;
+
+    &__background {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 100%;
+            background-color: $background-color;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
 
     &__title {
         position: relative;
@@ -45,5 +60,33 @@
         &--login {
             right: 22.7rem;
         }
+    }
+
+    &__alert {
+        position: absolute;
+        display: block;
+        padding: 1rem 3rem;
+        background-color: $talk-block;
+        border-radius: 2rem;
+    }
+
+    &__alertTopLeft {
+        top: 8%;
+        left: 33%;
+    }
+
+    &__alertTopRight {
+        top: 17%;
+        right: -23%;
+    }
+
+    &__alertBottomLeft {
+        bottom: 8%;
+        left: 14%;
+    }
+
+    &__alertBottomRight {
+        bottom: -5%;
+        right: -7%;
     }
 }
