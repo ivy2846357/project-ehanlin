@@ -10,3 +10,19 @@
         }
     }
 }
+
+.navbar {
+
+    &__btn {
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        position: relative;
+        z-index: 9;
+        background-color: #fff;
+        border: none;
+        outline: none;
+
+    }
+}
