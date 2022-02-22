@@ -13604,6 +13604,22 @@ a {
   border-bottom: 0.5rem solid #0F5C9E;
 }
 
+.navbar__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 9;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
 /*------------------- 導覽列下拉選單箭頭 -------------------*/
 .dropdown {
   position: relative;
@@ -13653,6 +13669,52 @@ a {
 
 .dropdown__subTitle {
   background-color: #BEE1FF;
+}
+
+/*------------------- 漢堡選單元件 -------------------*/
+.navbar__hamburgerIcon {
+  width: 100%;
+  height: .2rem;
+  background-color: #0F5C9E;
+  position: relative;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.navbar__hamburgerIcon::after, .navbar__hamburgerIcon::before {
+  content: '';
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  width: 100%;
+  height: .2rem;
+  background-color: #0F5C9E;
+}
+
+.navbar__hamburgerIcon::after {
+  left: 0;
+  top: -.6rem;
+}
+
+.navbar__hamburgerIcon::before {
+  left: 0;
+  bottom: -.6rem;
+}
+
+.navbar__hamburgerIcon--active::after {
+  content: '';
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar__hamburgerIcon--active::before {
+  content: '';
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*# sourceMappingURL=all.css.map */
