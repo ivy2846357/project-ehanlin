@@ -3,23 +3,33 @@
 .footer {
     padding: 4.5rem 0;
 
+    /*----------- 標題 -----------*/
+
     &__title {
         font-size: 3rem;
     }
 
+    /*----------- 副標題 -----------*/
+
     &__subTitle {
         font-size: 1.5rem;
     }
+
+    /*----------- 提示文字 -----------*/
 
     &__point {
         font-size: 1rem;
         font-weight: bold;
     }
 
+    /*----------- icon 連結 -----------*/
+
     &__iconLink {
         padding: .5rem;
         border-radius: .5rem;
     }
+
+    /*----------- 文字連結 -----------*/
 
     &__link {
         color: #fff;

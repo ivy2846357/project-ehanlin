@@ -1,0 +1,12 @@
+/*------------------- 自訂導覽列元件 -------------------*/
+
+.nav {
+
+    &__hover {
+        border-bottom: .5rem solid transparent;
+
+        &:hover {
+            border-bottom: .5rem solid $primary;
+        }
+    }
+}

@@ -14,7 +14,7 @@
 
   <!-- 導覽列 -->
 
-  <nav class="navbar navbar-expand-lg navbar-light px-9 py-4 effect__shadow">
+  <nav class="navbar navbar-expand-lg navbar-light py-0 px-9 effect__shadow">
     <div class="container-fluid">
       <!-- 品牌 LOGO -->
       <a class="navbar-brand" href="#">
@@ -28,23 +28,28 @@
       <!-- 導覽列表 -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- 左側選單 -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 border-end me-4">
-          <li class="nav-item me-4">
-            <a class="nav-link text-primary" aria-current="page" href="#">e教程系列</a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-primary py-6 px-3 nav__hover" aria-current="page" href="#">e教程系列</a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-primary" href="#">免費試用</a>
+          <li class="nav-item">
+            <a class="nav-link text-primary py-6 px-3 nav__hover" href="#">免費試用</a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-primary" href="#">課程總覽</a>
+          <li class="nav-item">
+            <a class="nav-link text-primary py-6 px-3 nav__hover" href="#">課程總覽</a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-primary" href="#">課程開通</a>
+          <li class="nav-item">
+            <a class="nav-link text-primary py-6 px-3 nav__hover" href="#">課程開通</a>
           </li>
-          <li class="nav-item dropdown me-4">
-            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              升學專區
+          <li class="nav-item dropdown">
+            <a class="nav-link py-6 px-3 nav__hover d-flex align-items-center dropdown__link" href="#"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="text-primary">升學專區</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-down-fill ms-2 dropdown__arrow" viewBox="0 0 16 16">
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item text-primary" href="#">風雲盃獎學金申請</a></li>
@@ -53,25 +58,28 @@
               <li><a class="dropdown-item text-primary" href="#">加入 e 家族</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown me-4">
-            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              活動專區
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link py-6 px-3 nav__hover d-flex align-items-center dropdown__link" href="#"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="text-primary">活動專區</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-down-fill ms-2 dropdown__arrow" viewBox="0 0 16 16">
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item text-primary" href="#">風雲盃獎學金申請</a></li>
+              <li><a class="dropdown-item text-primary" href="#">翰林童話鎮保衛戰</a></li>
+              <li><a class="dropdown-item text-primary" href="#">校園大使</a></li>
+              <li><a class="dropdown-item text-primary" href="#">加入 e 家族</a></li>
             </ul>
           </li>
         </ul>
         <!-- 右側使用者功能 -->
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center border-start">
           <!-- 購物車 -->
-          <a href="#" class="cart me-4">
+          <a href="#" class="cart mx-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
               class="bi bi-cart4" viewBox="0 0 16 16">
               <path
