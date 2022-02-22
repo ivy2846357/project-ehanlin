@@ -1,0 +1,44 @@
+/*------------------- 自訂下拉選單樣式 -------------------*/
+
+.dropdown {
+
+    /*----------- 下拉選單 -----------*/
+
+    &__menu {
+        position: absolute;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        overflow: hidden;
+        border: none;
+        top: 8rem !important;
+
+        &SingleCol {
+            left: -1.7rem !important;
+        }
+
+        &PluralCol {
+            left: -15rem !important;
+        }
+    }
+
+    /*----------- 下拉選單連結 -----------*/
+
+    &__item {
+        padding: 1rem 1.5rem;
+    }
+
+    &__itemHover {
+        color: $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+
+    /*----------- 下拉選單副標題 -----------*/
+
+    &__subTitle {
+        background-color: $secondary;
+    }
+}
