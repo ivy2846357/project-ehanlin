@@ -24,14 +24,32 @@
 
     /*----------- icon 連結 -----------*/
 
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: $primary;
+    }
+
     &__iconLink {
         padding: .5rem;
         border-radius: .5rem;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
+        }
     }
 
     /*----------- 文字連結 -----------*/
 
     &__link {
         color: #fff;
+        transition: all .3s;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: $secondary;
+            border-bottom: 1px solid $secondary;
+        }
     }
 }
