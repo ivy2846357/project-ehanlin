@@ -13385,7 +13385,22 @@ a {
 /*------------------- layout -------------------*/
 /*------------------- 登入註冊內容 -------------------*/
 .signForm {
-  padding: 5rem 0;
+  padding: 5rem 0 7rem 0;
+}
+
+.signForm__background {
+  position: relative;
+}
+
+.signForm__background::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-color: #F6FBFF;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .signForm__title {
@@ -13433,6 +13448,34 @@ a {
   right: 22.7rem;
 }
 
+.signForm__alert {
+  position: absolute;
+  display: block;
+  padding: 1rem 3rem;
+  background-color: #5B8BBA;
+  border-radius: 2rem;
+}
+
+.signForm__alertTopLeft {
+  top: 8%;
+  left: 33%;
+}
+
+.signForm__alertTopRight {
+  top: 17%;
+  right: -23%;
+}
+
+.signForm__alertBottomLeft {
+  bottom: 8%;
+  left: 14%;
+}
+
+.signForm__alertBottomRight {
+  bottom: -5%;
+  right: -7%;
+}
+
 /*------------------- compoments -------------------*/
 /*------------------- 自訂按鈕元件 -------------------*/
 .btn {
@@ -13445,9 +13488,11 @@ a {
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
+/*------------------- 圖片位置 -------------------*/
 .education__pic {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  right: -10rem;
+  top: -2rem;
 }
 
 /*------------------- 購物車元件 -------------------*/
