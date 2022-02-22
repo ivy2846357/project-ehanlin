@@ -105,8 +105,17 @@
     }
 }
 
+/*------------------- 表單樣式 -------------------*/
+
 .signFormContent {
     padding: .5rem 1.5rem;
     border-radius: .5rem;
     background-color: #fff;
+}
+
+/*------------------- 登入表單樣式 -------------------*/
+
+.loginForm {
+    padding-bottom: 86px;
+    display: none;
 }
