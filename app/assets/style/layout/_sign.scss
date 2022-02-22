@@ -1,12 +1,16 @@
 /*------------------- 登入註冊內容 -------------------*/
 
 .signForm {
-    padding: 5rem 0 7rem 0;
+    padding: 5rem 0;
 
     /*----------- 淺藍背景 -----------*/
 
     &__background {
         position: relative;
+        background-image: url('../images/online-education.svg');
+        background-repeat: no-repeat;
+        background-position: 90% 0;
+        background-size: 55rem;
 
         &::after {
             content: '';
@@ -99,4 +103,8 @@
         bottom: -5%;
         right: -7%;
     }
+}
+
+.signFormContent {
+    border: 1px solid black;
 }
