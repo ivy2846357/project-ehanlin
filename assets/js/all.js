@@ -11,6 +11,10 @@ $(document).ready(function () {
     /*----------- 新增登入特效 -----------*/
 
     $('.loginBtn').addClass('fw-bold').addClass('text-primary');
+    /*----------- 切換登入表單 -----------*/
+
+    $('.loginForm').addClass('d-block').removeClass('d-none');
+    $('.registerForm').addClass('d-none').removeClass('d-block');
   });
   $('.registerBtn').click(function (e) {
     /*----------- 底線位置移動 -----------*/
@@ -21,6 +25,10 @@ $(document).ready(function () {
     /*----------- 新增註冊特效 -----------*/
 
     $('.registerBtn').addClass('fw-bold').addClass('text-primary');
+    /*----------- 切換註冊表單 -----------*/
+
+    $('.loginForm').addClass('d-none').removeClass('d-block');
+    $('.registerForm').addClass('d-block').removeClass('d-none');
   });
 });
 //# sourceMappingURL=all.js.map
