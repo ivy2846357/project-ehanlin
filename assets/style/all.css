@@ -13504,13 +13504,36 @@ a {
   font-weight: bold;
 }
 
+.footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #0F5C9E;
+}
+
 .footer__iconLink {
   padding: .5rem;
   border-radius: .5rem;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer__iconLink:hover {
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 }
 
 .footer__link {
   color: #fff;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border-bottom: 1px solid transparent;
+}
+
+.footer__link:hover {
+  color: #BEE1FF;
+  border-bottom: 1px solid #BEE1FF;
 }
 
 /*------------------- compoments -------------------*/
