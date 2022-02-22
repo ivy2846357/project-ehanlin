@@ -13484,6 +13484,11 @@ a {
 /*------------------- footer 樣式 -------------------*/
 .footer {
   padding: 4.5rem 0;
+  /*----------- 標題 -----------*/
+  /*----------- 副標題 -----------*/
+  /*----------- 提示文字 -----------*/
+  /*----------- icon 連結 -----------*/
+  /*----------- 文字連結 -----------*/
 }
 
 .footer__title {
@@ -13544,6 +13549,20 @@ a {
   position: absolute;
   top: -.2rem;
   right: -.5rem;
+}
+
+/*------------------- 自訂導覽列元件 -------------------*/
+.nav__hover {
+  border-bottom: .5rem solid transparent;
+}
+
+.nav__hover:hover {
+  border-bottom: 0.5rem solid #0F5C9E;
+}
+
+/*------------------- 導覽列下拉選單 -------------------*/
+.dropdown__arrow {
+  color: #BEE1FF;
 }
 
 /*# sourceMappingURL=all.css.map */
