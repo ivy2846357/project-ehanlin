@@ -13547,8 +13547,8 @@ a {
   border-radius: 50%;
   font-size: .5rem;
   position: absolute;
-  top: -.2rem;
-  right: -.5rem;
+  top: 1.3rem;
+  right: 1rem;
 }
 
 /*------------------- 自訂導覽列元件 -------------------*/
@@ -13560,9 +13560,55 @@ a {
   border-bottom: 0.5rem solid #0F5C9E;
 }
 
-/*------------------- 導覽列下拉選單 -------------------*/
+/*------------------- 導覽列下拉選單箭頭 -------------------*/
+.dropdown {
+  position: relative;
+  /*----------- 下拉選單箭頭 -----------*/
+}
+
 .dropdown__arrow {
   color: #BEE1FF;
+}
+
+/*------------------- 自訂下拉選單樣式 -------------------*/
+.dropdown {
+  /*----------- 下拉選單 -----------*/
+  /*----------- 下拉選單連結 -----------*/
+  /*----------- 下拉選單副標題 -----------*/
+}
+
+.dropdown__menu {
+  position: absolute;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  border: none;
+  top: 8rem !important;
+}
+
+.dropdown__menuSingleCol {
+  left: -1.7rem !important;
+}
+
+.dropdown__menuPluralCol {
+  left: -15rem !important;
+}
+
+.dropdown__item {
+  padding: 1rem 1.5rem;
+}
+
+.dropdown__itemHover {
+  color: #0F5C9E;
+}
+
+.dropdown__itemHover:hover {
+  background-color: #0F5C9E;
+  color: #fff;
+}
+
+.dropdown__subTitle {
+  background-color: #BEE1FF;
 }
 
 /*# sourceMappingURL=all.css.map */
