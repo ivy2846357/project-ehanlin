@@ -41,9 +41,12 @@ $(document).ready(function () {
   $('.dropdown__link').click(function (e) {
     $(this).find('.dropdown__arrow').toggleClass('dropdown__arrow--change');
     $(this).parent().siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
-  }); // $('.dropdown').click(function (e) {
-  //   $(this).addClass('dropdown__link--change');
-  //   $(this).parent().siblings().find('dropdown').removeClass('dropdown__link--change');
-  // })
+  });
+  /*----------- 標註當前點選的下拉選單效果 -----------*/
+
+  $('.dropdown').click(function (e) {
+    $(this).addClass('dropdown__link--change');
+    $(this).siblings().removeClass('dropdown__link--change');
+  });
 });
 //# sourceMappingURL=all.js.map

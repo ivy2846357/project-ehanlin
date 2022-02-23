@@ -13754,6 +13754,7 @@ a {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+  /*----------- 下拉選單箭頭動畫 -----------*/
 }
 
 .dropdown__arrow--change {
@@ -13810,6 +13811,7 @@ a {
   .dropdown {
     /*----------- 下拉選單 -----------*/
     /*----------- 下拉選單連結 -----------*/
+    /*----------- 下拉選單副標題 -----------*/
   }
   .dropdown__menu {
     -webkit-box-shadow: none;
@@ -13825,6 +13827,9 @@ a {
   }
   .dropdown__link--change {
     background-color: #BEE1FF;
+  }
+  .dropdown__subTitle {
+    background-color: #F6FBFF;
   }
   .subDropdown__menu {
     width: 25%;
