@@ -76,37 +76,6 @@
         }
     }
 
-    /*----------- 圖片文字框 -----------*/
-
-    &__alert {
-        position: absolute;
-        display: block;
-        padding: 1rem 3rem;
-        background-color: $talk-block;
-        border-radius: 2rem;
-    }
-
-    /*----------- 文字框位置 -----------*/
-
-    &__alertTopLeft {
-        top: 8%;
-        left: 33%;
-    }
-
-    &__alertTopRight {
-        top: 17%;
-        right: -23%;
-    }
-
-    &__alertBottomLeft {
-        bottom: 8%;
-        left: 14%;
-    }
-
-    &__alertBottomRight {
-        bottom: -5%;
-        right: -7%;
-    }
 }
 
 /*------------------- 表單樣式 -------------------*/
@@ -172,6 +141,7 @@
 }
 
 @media(max-width: 1200px) {
+
     .signForm {
 
         /*----------- 顯示狀態 -----------*/
@@ -191,6 +161,7 @@
 }
 
 @media(max-width: 992px) {
+
     .signForm {
 
         /*----------- 顯示狀態 -----------*/
@@ -210,6 +181,7 @@
 }
 
 @media(max-width: 768px) {
+
     .signForm {
 
         /*----------- 顯示狀態 -----------*/
@@ -231,20 +203,38 @@
 /*------------------- 登入註冊內容(手機) -------------------*/
 
 @media(max-width: 576px) {
+
     .signForm {
+        padding: 0;
 
         /*----------- 顯示狀態 -----------*/
 
         &__enableLine {
 
             &--register {
-                transform: translateX(7.25rem);
+                transform: translateX(6.3rem);
             }
 
             &--login {
-                transform: translateX(-7.25rem);
+                transform: translateX(-6.3rem);
             }
         }
 
+        /*----------- 登入註冊標題 -----------*/
+
+        &__title {
+
+            &::after,
+            &::before {
+                width: 5rem;
+            }
+        }
+
+    }
+
+    /*----------- 表單樣式 -----------*/
+
+    .signFormContent {
+        box-shadow: none;
     }
 }
