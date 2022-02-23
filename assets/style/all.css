@@ -13390,8 +13390,6 @@ a {
   /*----------- 圖片背景 -----------*/
   /*----------- 登入註冊標題 -----------*/
   /*----------- 顯示狀態 -----------*/
-  /*----------- 圖片文字框 -----------*/
-  /*----------- 文字框位置 -----------*/
 }
 
 .signForm__background {
@@ -13464,34 +13462,6 @@ a {
   -webkit-transform: translateX(-8rem);
       -ms-transform: translateX(-8rem);
           transform: translateX(-8rem);
-}
-
-.signForm__alert {
-  position: absolute;
-  display: block;
-  padding: 1rem 3rem;
-  background-color: #5B8BBA;
-  border-radius: 2rem;
-}
-
-.signForm__alertTopLeft {
-  top: 8%;
-  left: 33%;
-}
-
-.signForm__alertTopRight {
-  top: 17%;
-  right: -23%;
-}
-
-.signForm__alertBottomLeft {
-  bottom: 8%;
-  left: 14%;
-}
-
-.signForm__alertBottomRight {
-  bottom: -5%;
-  right: -7%;
 }
 
 /*------------------- 表單樣式 -------------------*/
@@ -13594,17 +13564,27 @@ a {
 /*------------------- 登入註冊內容(手機) -------------------*/
 @media (max-width: 576px) {
   .signForm {
+    padding: 0;
     /*----------- 顯示狀態 -----------*/
+    /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(7.25rem);
-        -ms-transform: translateX(7.25rem);
-            transform: translateX(7.25rem);
+    -webkit-transform: translateX(6.3rem);
+        -ms-transform: translateX(6.3rem);
+            transform: translateX(6.3rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-7.25rem);
-        -ms-transform: translateX(-7.25rem);
-            transform: translateX(-7.25rem);
+    -webkit-transform: translateX(-6.3rem);
+        -ms-transform: translateX(-6.3rem);
+            transform: translateX(-6.3rem);
+  }
+  .signForm__title::after, .signForm__title::before {
+    width: 5rem;
+  }
+  /*----------- 表單樣式 -----------*/
+  .signFormContent {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
