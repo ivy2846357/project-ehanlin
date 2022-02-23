@@ -48,7 +48,7 @@ $(document).ready(function () {
   /*----------- 下拉選單箭頭轉換 -----------*/
   $('.dropdown__link').click(function (e) {
     $(this).find('.dropdown__arrow').toggleClass('dropdown__arrow--change');
-    $(this).parent().siblings().find('.dropdown').addClass('add');
+    $(this).parent().siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
   })
 
 
