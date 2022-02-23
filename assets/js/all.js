@@ -40,7 +40,7 @@ $(document).ready(function () {
 
   $('.dropdown__link').click(function (e) {
     $(this).find('.dropdown__arrow').toggleClass('dropdown__arrow--change');
-    $(this).parent().siblings().find('.dropdown').addClass('add');
+    $(this).parent().siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
   }); // $('.dropdown').click(function (e) {
   //   $(this).addClass('dropdown__link--change');
   //   $(this).parent().siblings().find('dropdown').removeClass('dropdown__link--change');
