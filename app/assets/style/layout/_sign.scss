@@ -4,7 +4,7 @@
     margin-top: 7rem;
     padding: 5rem 0;
 
-    /*----------- 淺藍背景 -----------*/
+    /*----------- 圖片背景 -----------*/
 
     &__background {
         position: relative;
@@ -12,6 +12,9 @@
         background-repeat: no-repeat;
         background-position: 90% center;
         background-size: 50%;
+        transition: all .3s;
+
+        /*----------- 淺藍背景 -----------*/
 
         &::after {
             content: '';
@@ -119,4 +122,110 @@
 .loginForm {
     padding-bottom: 86px;
     display: none;
+}
+
+/*------------------- 登入註冊內容(平板) -------------------*/
+
+@media(max-width: 1450px) {
+
+    .signForm {
+        margin-top: 6rem;
+        padding: 6rem 0;
+
+        /*----------- 圖片背景設定 -----------*/
+
+        &__background {
+            background-image: none;
+
+            &::after {
+                width: 50%;
+            }
+        }
+
+        /*----------- 顯示狀態 -----------*/
+
+        &__enableLine {
+
+            &--register {
+                transform: translateX(13.55rem);
+            }
+
+            &--login {
+                transform: translateX(-13.55rem);
+            }
+        }
+
+    }
+
+    /*----------- 表單樣式 -----------*/
+
+    .signFormContent {
+        padding: 2.5rem 2.5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    }
+
+    /*----------- 登入表單樣式 -----------*/
+
+    .loginForm {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 1200px) {
+    .signForm {
+
+        /*----------- 顯示狀態 -----------*/
+
+        &__enableLine {
+
+            &--register {
+                transform: translateX(11.4rem);
+            }
+
+            &--login {
+                transform: translateX(-11.4rem);
+            }
+        }
+
+    }
+}
+
+@media(max-width: 992px) {
+    .signForm {
+
+        /*----------- 顯示狀態 -----------*/
+
+        &__enableLine {
+
+            &--register {
+                transform: translateX(8.2rem);
+            }
+
+            &--login {
+                transform: translateX(-8.05rem);
+            }
+        }
+
+    }
+}
+
+/*------------------- 登入註冊內容(手機) -------------------*/
+
+@media(max-width: 576px) {
+    .signForm {
+
+        /*----------- 顯示狀態 -----------*/
+
+        &__enableLine {
+
+            &--register {
+                transform: translateX(7.25rem);
+            }
+
+            &--login {
+                transform: translateX(-7.25rem);
+            }
+        }
+
+    }
 }
