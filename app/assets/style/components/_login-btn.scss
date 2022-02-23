@@ -1,0 +1,14 @@
+/*------------------- 自訂登入按鈕元件 -------------------*/
+
+@media(max-width: 1450px) {
+
+    .navbar {
+
+        &__loginBtn {
+            width: 100%;
+            border-radius: 0;
+        }
+
+    }
+
+}
