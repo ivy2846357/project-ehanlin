@@ -653,7 +653,7 @@ progress {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1320px;
   }
@@ -937,7 +937,7 @@ progress {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .col-xxl {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
@@ -2010,7 +2010,7 @@ progress {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .col-xxl-auto {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -2407,7 +2407,7 @@ progress {
   }
 }
 
-@media (max-width: 1409.98px) {
+@media (max-width: 1449.98px) {
   .table-responsive-xxl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -4463,7 +4463,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .dropdown-menu-xxl-start {
     --bs-position: start;
   }
@@ -5173,7 +5173,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .navbar-expand-xxl {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -6257,7 +6257,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .list-group-horizontal-xxl {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6888,7 +6888,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (max-width: 1409.98px) {
+@media (max-width: 1449.98px) {
   .modal-fullscreen-xxl-down {
     width: 100vw;
     max-width: none;
@@ -7806,7 +7806,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .sticky-xxl-top {
     position: -webkit-sticky;
     position: sticky;
@@ -12550,7 +12550,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1410px) {
+@media (min-width: 1450px) {
   .float-xxl-start {
     float: left !important;
   }
@@ -13673,6 +13673,7 @@ a {
 
 /*------------------- 漢堡選單元件 -------------------*/
 .navbar__hamburgerIcon {
+  display: none;
   width: 100%;
   height: .2rem;
   background-color: #0F5C9E;
@@ -13715,6 +13716,13 @@ a {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/*------------------- 漢堡選單元件(平板) -------------------*/
+@media (max-width: 1450px) {
+  .navbar__hamburgerIcon {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

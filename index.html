@@ -30,8 +30,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- 左側選單 -->
         <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-primary py-6 px-3 nav__hover" aria-current="page" href="#">e教程系列</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link py-6 px-3 nav__hover d-flex align-items-center dropdown__link" href="#"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="text-primary">e課程</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-down-fill ms-2 dropdown__arrow" viewBox="0 0 16 16">
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
+            </a>
+            <ul class="dropdown-menu p-0 dropdown__menu dropdown__menuSingleCol effect__shadow"
+              aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item dropdown__item dropdown__itemHover d-flex align-items-center" href="#">e家教<span
+                    class="badge bg-emphasize ms-2">真人1對1</span></a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown__item dropdown__itemHover d-flex align-items-center" href="#">e名師<span
+                    class="badge bg-primary ms-2">名師授課</span></a>
+              </li>
+              <li><a class="dropdown-item dropdown__item dropdown__itemHover" href="#">e評量</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary py-6 px-3 nav__hover" href="#">免費試用</a>
@@ -45,7 +65,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link py-6 px-3 nav__hover d-flex align-items-center dropdown__link" href="#"
               id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="text-primary">升學專區</span>
+              <span class="text-primary">活動專區</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-caret-down-fill ms-2 dropdown__arrow" viewBox="0 0 16 16">
                 <path
