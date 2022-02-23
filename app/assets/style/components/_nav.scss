@@ -1,4 +1,4 @@
-/*------------------- 自訂導覽列元件 -------------------*/
+/*------------------- 自訂主導覽列元件 -------------------*/
 
 .nav {
 
@@ -7,6 +7,34 @@
 
         &:hover {
             border-bottom: .5rem solid $primary;
+        }
+    }
+
+    &-link {
+        color: $primary !important;
+    }
+}
+
+/*------------------- 主導覽列元件(平板) -------------------*/
+
+@media(max-width: 1450px) {
+    .nav {
+
+        &__hover {
+            border-bottom: none;
+
+            &:hover {
+                border-bottom: none;
+                background-color: $primary;
+            }
+
+        }
+
+        &-link {
+
+            &:hover {
+                color: #fff !important;
+            }
         }
     }
 }
