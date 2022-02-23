@@ -13670,6 +13670,14 @@ a {
   border-radius: .5rem;
 }
 
+/*------------------- 自訂登入按鈕元件 -------------------*/
+@media (max-width: 1450px) {
+  .navbar__loginBtn {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
 /*------------------- 特效樣式 -------------------*/
 .effect__shadow {
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
