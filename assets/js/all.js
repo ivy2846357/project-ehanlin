@@ -35,6 +35,9 @@ $(document).ready(function () {
 
   $('.navbar__hamburger').click(function (e) {
     $('.navbar__hamburgerIcon').toggleClass('navbar__hamburgerIcon--change');
-  });
+  }); // $('.dropdown').click(function (e) {
+  //   $(this).addClass('dropdown__link--change');
+  //   $(this).parent().siblings().find('dropdown').removeClass('dropdown__link--change');
+  // })
 });
 //# sourceMappingURL=all.js.map

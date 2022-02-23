@@ -13597,6 +13597,11 @@ a {
 }
 
 /*------------------- 自訂主導覽列元件 -------------------*/
+.nav {
+  /*----------- 電腦版 hover 效果 -----------*/
+  /*----------- 修改 nav-link 樣式 -----------*/
+}
+
 .nav__hover {
   border-bottom: .5rem solid transparent;
 }
@@ -13611,6 +13616,10 @@ a {
 
 /*------------------- 主導覽列元件(平板) -------------------*/
 @media (max-width: 1450px) {
+  .nav {
+    /*----------- 取消電腦版 hover 效果 + 新增 mobile 樣式 -----------*/
+    /*----------- 修改 nav-link 樣式 -----------*/
+  }
   .nav__hover {
     border-bottom: none;
   }
@@ -13620,6 +13629,12 @@ a {
   }
   .nav-link:hover {
     color: #fff !important;
+  }
+  .nav-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav-item:last-child {
+    border-bottom: none;
   }
 }
 
@@ -13647,6 +13662,8 @@ a {
   overflow: hidden;
   border: none;
   top: 8rem !important;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .dropdown__menuSingleCol {
@@ -13674,7 +13691,29 @@ a {
   background-color: #BEE1FF;
 }
 
-/*------------------- 下拉子選單樣式(平板) -------------------*/
+/*------------------- 下拉子選單樣式(mobile) -------------------*/
+@media (max-width: 1450px) {
+  .dropdown {
+    /*----------- 下拉選單 -----------*/
+    /*----------- 下拉選單連結 -----------*/
+  }
+  .dropdown__menu {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  .dropdown__item {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .dropdown__item:last-child {
+    border-bottom: none;
+  }
+  .dropdown__link--change {
+    background-color: #BEE1FF;
+  }
+}
+
 /*------------------- 漢堡選單元件 -------------------*/
 .navbar {
   background-color: #fff;
