@@ -5,6 +5,7 @@
     &__hamburger {
 
         &Icon {
+            display: none;
             width: 100%;
             height: .2rem;
             background-color: $primary;
@@ -43,6 +44,17 @@
                     transform: rotate(-45deg);
                 }
             }
+        }
+    }
+}
+
+/*------------------- 漢堡選單元件(平板) -------------------*/
+
+@media(max-width: 1450px) {
+    .navbar {
+
+        &__hamburgerIcon {
+            display: block;
         }
     }
 }
