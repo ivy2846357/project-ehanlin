@@ -45,7 +45,7 @@ $(document).ready(function () {
   /*----------- 標註當前點選的下拉選單效果 -----------*/
 
   $('.dropdown').click(function (e) {
-    $(this).addClass('dropdown__link--change');
+    $(this).toggleClass('dropdown__link--change');
     $(this).siblings().removeClass('dropdown__link--change');
   });
 });
