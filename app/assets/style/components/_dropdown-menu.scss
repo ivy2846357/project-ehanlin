@@ -75,6 +75,12 @@
                 background-color: $secondary;
             }
         }
+
+        /*----------- 下拉選單副標題 -----------*/
+
+        &__subTitle {
+            background-color: $background-color;
+        }
     }
 
     .subDropdown__menu {

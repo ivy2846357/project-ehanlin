@@ -9,6 +9,8 @@
         color: $auxiliary-light;
         transition: all .3s;
 
+        /*----------- 下拉選單箭頭動畫 -----------*/
+
         &--change {
             transform: rotate(180deg);
         }
