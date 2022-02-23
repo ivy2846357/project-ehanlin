@@ -7,5 +7,10 @@
 
     &__arrow {
         color: $auxiliary-light;
+        transition: all .3s;
+
+        &--change {
+            transform: rotate(180deg);
+        }
     }
 }
