@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "@types/overlayscrollbars": "^1.12.1",
     "autoprefixer": "^9.8.6",
     "bootstrap": "^5.0.2",
     "browser-sync": "^2.26.13",
@@ -39,6 +40,7 @@
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.14.1",
+    "overlayscrollbars": "^1.13.1",
     "popper.js": "^1.16.1"
   }
 }
