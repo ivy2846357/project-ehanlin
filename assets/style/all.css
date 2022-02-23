@@ -13796,7 +13796,7 @@ a {
   background-color: #BEE1FF;
 }
 
-/*------------------- 下拉子選單樣式(mobile) -------------------*/
+/*------------------- 下拉子選單樣式(平板) -------------------*/
 @media (max-width: 1450px) {
   .dropdown {
     /*----------- 下拉選單 -----------*/
@@ -13808,7 +13808,7 @@ a {
     border-radius: 0;
   }
   .dropdown__item {
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .dropdown__item:last-child {
@@ -13816,6 +13816,16 @@ a {
   }
   .dropdown__link--change {
     background-color: #BEE1FF;
+  }
+  .subDropdown__menu {
+    width: 25%;
+  }
+}
+
+/*------------------- 下拉子選單樣式(手機) -------------------*/
+@media (max-width: 768px) {
+  .subDropdown__menu {
+    width: 100%;
   }
 }
 
