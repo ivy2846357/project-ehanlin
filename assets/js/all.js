@@ -35,6 +35,12 @@ $(document).ready(function () {
 
   $('.navbar__hamburger').click(function (e) {
     $('.navbar__hamburgerIcon').toggleClass('navbar__hamburgerIcon--change');
+  });
+  /*----------- 下拉選單箭頭轉換 -----------*/
+
+  $('.dropdown__link').click(function (e) {
+    $(this).find('.dropdown__arrow').toggleClass('dropdown__arrow--change');
+    $(this).parent().siblings().find('.dropdown').addClass('add');
   }); // $('.dropdown').click(function (e) {
   //   $(this).addClass('dropdown__link--change');
   //   $(this).parent().siblings().find('dropdown').removeClass('dropdown__link--change');
