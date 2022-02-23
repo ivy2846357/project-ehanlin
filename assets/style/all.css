@@ -13940,25 +13940,20 @@ a {
 }
 
 /*------------------- 導覽列 scrollbar -------------------*/
-.scrollbar {
-  overflow-y: scroll;
-}
-
-/*
- *  STYLE 3
- */
-#style-3::-webkit-scrollbar {
-  width: 6px;
-  background-color: transparent;
-}
-
-#style-3::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-
 @media (max-width: 1450px) {
   .scrollbar {
+    overflow-y: scroll;
     height: 100vh;
+  }
+  /*
+     *  STYLE 3
+     */
+  #style-3::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+  #style-3::-webkit-scrollbar-thumb {
+    background-color: transparent;
   }
 }
 
