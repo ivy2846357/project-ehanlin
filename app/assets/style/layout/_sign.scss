@@ -209,6 +209,25 @@
     }
 }
 
+@media(max-width: 768px) {
+    .signForm {
+
+        /*----------- 顯示狀態 -----------*/
+
+        &__enableLine {
+
+            &--register {
+                transform: translateX(7.35rem);
+            }
+
+            &--login {
+                transform: translateX(-7.1rem);
+            }
+        }
+
+    }
+}
+
 /*------------------- 登入註冊內容(手機) -------------------*/
 
 @media(max-width: 576px) {
