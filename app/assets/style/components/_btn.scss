@@ -1,6 +1,26 @@
 /*------------------- 自訂按鈕元件 -------------------*/
 
 .btn {
+    border: none;
     padding: .75rem 1.5rem;
     border-radius: .5rem;
+    transition: all .5s;
+}
+
+/*------------------- 修改按鈕 hover 效果 -------------------*/
+
+.btn-primary {
+    box-shadow: inset 0 0 0 0 $auxiliary-dark;
+
+    &:hover {
+        box-shadow: inset 35rem 0 0 0 $auxiliary-dark;
+    }
+}
+
+.btn-emphasize {
+    box-shadow: inset 0 0 0 0 #FFB72F;
+
+    &:hover {
+        box-shadow: inset 35rem 0 0 0 #FFB72F;
+    }
 }
