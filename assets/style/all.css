@@ -13478,7 +13478,7 @@ a {
 }
 
 /*------------------- 登入註冊內容(平板) -------------------*/
-@media (max-width: 1450px) {
+@media (max-width: 1451px) {
   .signForm {
     margin-top: 6rem;
     padding: 6rem 0;
@@ -13676,7 +13676,7 @@ a {
 }
 
 /*------------------- 自訂登入按鈕元件 -------------------*/
-@media (max-width: 1450px) {
+@media (max-width: 1451px) {
   .navbar__loginBtn {
     width: 100%;
     border-radius: 0;
@@ -13733,7 +13733,7 @@ a {
 }
 
 /*------------------- 主導覽列元件(平板) -------------------*/
-@media (max-width: 1450px) {
+@media (max-width: 1451px) {
   .nav {
     /*----------- 取消電腦版 hover 效果 + 新增 mobile 樣式 -----------*/
     /*----------- 修改 nav-link 樣式 -----------*/
@@ -13820,7 +13820,7 @@ a {
 }
 
 /*------------------- 下拉子選單樣式(平板) -------------------*/
-@media (max-width: 1450px) {
+@media (max-width: 1451px) {
   .dropdown {
     /*----------- 下拉選單 -----------*/
     /*----------- 下拉選單連結 -----------*/
@@ -13933,14 +13933,14 @@ a {
 }
 
 /*------------------- 漢堡選單元件(平板) -------------------*/
-@media (max-width: 1450px) {
+@media (max-width: 1451px) {
   .navbar__hamburgerIcon {
     display: block;
   }
 }
 
 /*------------------- 導覽列 scrollbar -------------------*/
-@media (max-width: 1450px) {
+@media (max-width: 1451px) {
   .scrollbar {
     overflow-y: scroll;
     height: 100vh;
