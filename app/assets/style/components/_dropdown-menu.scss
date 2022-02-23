@@ -11,6 +11,7 @@
         overflow: hidden;
         border: none;
         top: 8rem !important;
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
 
         &SingleCol {
             left: -1.7rem !important;
@@ -43,4 +44,36 @@
     }
 }
 
-/*------------------- 下拉子選單樣式(平板) -------------------*/
+/*------------------- 下拉子選單樣式(mobile) -------------------*/
+
+@media(max-width: 1450px) {
+
+    .dropdown {
+
+        /*----------- 下拉選單 -----------*/
+
+        &__menu {
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        /*----------- 下拉選單連結 -----------*/
+
+        &__item {
+            padding: 1.5rem 2.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+        }
+
+        &__link {
+
+            &--change {
+                background-color: $secondary;
+            }
+        }
+    }
+}

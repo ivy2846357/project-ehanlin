@@ -2,7 +2,9 @@
 
 $(document).ready(function () {
 
+
   /*----------- 登入註冊狀態轉換 -----------*/
+
 
   $('.loginBtn').click(function (e) {
 
@@ -34,9 +36,17 @@ $(document).ready(function () {
     $('.registerForm').addClass('d-block').removeClass('d-none');
   })
 
+
   /*----------- 漢堡選單轉換 -----------*/
+
+
   $('.navbar__hamburger').click(function (e) {
     $('.navbar__hamburgerIcon').toggleClass('navbar__hamburgerIcon--change');
   })
 
+
+  // $('.dropdown').click(function (e) {
+  //   $(this).addClass('dropdown__link--change');
+  //   $(this).parent().siblings().find('dropdown').removeClass('dropdown__link--change');
+  // })
 })

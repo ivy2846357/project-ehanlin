@@ -2,6 +2,8 @@
 
 .nav {
 
+    /*----------- 電腦版 hover 效果 -----------*/
+
     &__hover {
         border-bottom: .5rem solid transparent;
 
@@ -9,6 +11,8 @@
             border-bottom: .5rem solid $primary;
         }
     }
+
+    /*----------- 修改 nav-link 樣式 -----------*/
 
     &-link {
         color: $primary !important;
@@ -20,6 +24,8 @@
 @media(max-width: 1450px) {
     .nav {
 
+        /*----------- 取消電腦版 hover 效果 + 新增 mobile 樣式 -----------*/
+
         &__hover {
             border-bottom: none;
 
@@ -30,10 +36,20 @@
 
         }
 
+        /*----------- 修改 nav-link 樣式 -----------*/
+
         &-link {
 
             &:hover {
                 color: #fff !important;
+            }
+        }
+
+        &-item {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+            &:last-child {
+                border-bottom: none;
             }
         }
     }
