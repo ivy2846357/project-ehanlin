@@ -13385,8 +13385,8 @@ a {
 /*------------------- layout -------------------*/
 /*------------------- 登入註冊內容 -------------------*/
 .signForm {
-  margin-top: 7rem;
-  padding: 5rem 0;
+  margin-top: 5rem;
+  padding: 7rem 0;
   /*----------- 圖片背景 -----------*/
   /*----------- 登入註冊標題 -----------*/
   /*----------- 顯示狀態 -----------*/
@@ -13480,26 +13480,21 @@ a {
 /*------------------- 登入註冊內容(平板) -------------------*/
 @media (max-width: 1451px) {
   .signForm {
-    margin-top: 6rem;
-    padding: 6rem 0;
     /*----------- 圖片背景設定 -----------*/
     /*----------- 顯示狀態 -----------*/
   }
   .signForm__background {
-    background-image: none;
-  }
-  .signForm__background::after {
-    width: 50%;
+    background-size: 70%;
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(13.55rem);
-        -ms-transform: translateX(13.55rem);
-            transform: translateX(13.55rem);
+    -webkit-transform: translateX(7.7rem);
+        -ms-transform: translateX(7.7rem);
+            transform: translateX(7.7rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-13.55rem);
-        -ms-transform: translateX(-13.55rem);
-            transform: translateX(-13.55rem);
+    -webkit-transform: translateX(-7.6rem);
+        -ms-transform: translateX(-7.6rem);
+            transform: translateX(-7.6rem);
   }
   /*----------- 表單樣式 -----------*/
   .signFormContent {
@@ -13507,31 +13502,39 @@ a {
     -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   }
-  /*----------- 登入表單樣式 -----------*/
-  .loginForm {
-    padding-bottom: 0;
-  }
 }
 
 @media (max-width: 1200px) {
   .signForm {
     /*----------- 顯示狀態 -----------*/
+    /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(11.4rem);
-        -ms-transform: translateX(11.4rem);
-            transform: translateX(11.4rem);
+    -webkit-transform: translateX(6.35rem);
+        -ms-transform: translateX(6.35rem);
+            transform: translateX(6.35rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-11.4rem);
-        -ms-transform: translateX(-11.4rem);
-            transform: translateX(-11.4rem);
+    -webkit-transform: translateX(-6.2rem);
+        -ms-transform: translateX(-6.2rem);
+            transform: translateX(-6.2rem);
+  }
+  .signForm__title {
+    position: relative;
+  }
+  .signForm__title::after, .signForm__title::before {
+    width: 6rem;
   }
 }
 
 @media (max-width: 992px) {
   .signForm {
+    /*----------- 圖片背景設定 -----------*/
     /*----------- 顯示狀態 -----------*/
+    /*----------- 登入註冊標題 -----------*/
+  }
+  .signForm__background {
+    background: none;
   }
   .signForm__enableLine--register {
     -webkit-transform: translateX(8.2rem);
@@ -13542,6 +13545,16 @@ a {
     -webkit-transform: translateX(-8.05rem);
         -ms-transform: translateX(-8.05rem);
             transform: translateX(-8.05rem);
+  }
+  .signForm__title {
+    position: relative;
+  }
+  .signForm__title::after, .signForm__title::before {
+    width: 8rem;
+  }
+  /*----------- 登入表單樣式 -----------*/
+  .loginForm {
+    padding-bottom: 0;
   }
 }
 
