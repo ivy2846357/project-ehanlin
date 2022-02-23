@@ -1,6 +1,8 @@
-/*------------------- 登入註冊按鈕切換效果 -------------------*/
+/*------------------- 動畫效果 -------------------*/
 
 $(document).ready(function () {
+
+  /*----------- 登入註冊狀態轉換 -----------*/
 
   $('.loginBtn').click(function (e) {
 
@@ -30,6 +32,11 @@ $(document).ready(function () {
     /*----------- 切換註冊表單 -----------*/
     $('.loginForm').addClass('d-none').removeClass('d-block');
     $('.registerForm').addClass('d-block').removeClass('d-none');
+  })
+
+  /*----------- 漢堡選單轉換 -----------*/
+  $('.navbar__hamburger').click(function (e) {
+    $('.navbar__hamburgerIcon').toggleClass('navbar__hamburgerIcon--change');
   })
 
 })
