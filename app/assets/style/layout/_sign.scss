@@ -1,8 +1,8 @@
 /*------------------- 登入註冊內容 -------------------*/
 
 .signForm {
-    margin-top: 7rem;
-    padding: 5rem 0;
+    margin-top: 5rem;
+    padding: 7rem 0;
 
     /*----------- 圖片背景 -----------*/
 
@@ -98,17 +98,11 @@
 @media(max-width: 1451px) {
 
     .signForm {
-        margin-top: 6rem;
-        padding: 6rem 0;
 
         /*----------- 圖片背景設定 -----------*/
 
         &__background {
-            background-image: none;
-
-            &::after {
-                width: 50%;
-            }
+            background-size: 70%;
         }
 
         /*----------- 顯示狀態 -----------*/
@@ -116,11 +110,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(13.55rem);
+                transform: translateX(7.7rem);
             }
 
             &--login {
-                transform: translateX(-13.55rem);
+                transform: translateX(-7.6rem);
             }
         }
 
@@ -133,11 +127,6 @@
         box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     }
 
-    /*----------- 登入表單樣式 -----------*/
-
-    .loginForm {
-        padding-bottom: 0;
-    }
 }
 
 @media(max-width: 1200px) {
@@ -149,11 +138,22 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(11.4rem);
+                transform: translateX(6.35rem);
             }
 
             &--login {
-                transform: translateX(-11.4rem);
+                transform: translateX(-6.2rem);
+            }
+        }
+
+        /*----------- 登入註冊標題 -----------*/
+
+        &__title {
+            position: relative;
+
+            &::after,
+            &::before {
+                width: 6rem;
             }
         }
 
@@ -163,6 +163,12 @@
 @media(max-width: 992px) {
 
     .signForm {
+
+        /*----------- 圖片背景設定 -----------*/
+
+        &__background {
+            background: none;
+        }
 
         /*----------- 顯示狀態 -----------*/
 
@@ -177,6 +183,23 @@
             }
         }
 
+        /*----------- 登入註冊標題 -----------*/
+
+        &__title {
+            position: relative;
+
+            &::after,
+            &::before {
+                width: 8rem;
+            }
+        }
+
+    }
+
+    /*----------- 登入表單樣式 -----------*/
+
+    .loginForm {
+        padding-bottom: 0;
     }
 }
 
