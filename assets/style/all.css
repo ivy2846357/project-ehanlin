@@ -13604,22 +13604,6 @@ a {
   border-bottom: 0.5rem solid #0F5C9E;
 }
 
-.navbar__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 3rem;
-  height: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  z-index: 9;
-  background-color: #fff;
-  border: none;
-  outline: none;
-}
-
 /*------------------- 導覽列下拉選單箭頭 -------------------*/
 .dropdown {
   position: relative;
@@ -13672,12 +13656,33 @@ a {
 }
 
 /*------------------- 漢堡選單元件 -------------------*/
-.navbar__hamburgerIcon {
-  display: none;
-  width: 100%;
-  height: .2rem;
-  background-color: #0F5C9E;
+.navbar {
+  /*----------- 按鈕外層設定 -----------*/
+  /*----------- 漢堡選單元件設定 -----------*/
+}
+
+.navbar__hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4rem;
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  z-index: 9;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+.navbar__hamburgerIcon {
+  position: relative;
+  width: 100%;
+  height: .3rem;
+  background-color: #0F5C9E;
+  border-radius: .25rem;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -13685,37 +13690,42 @@ a {
 
 .navbar__hamburgerIcon::after, .navbar__hamburgerIcon::before {
   content: '';
+  position: absolute;
+  width: 100%;
+  height: .3rem;
+  background-color: #0F5C9E;
+  border-radius: .25rem;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
-  position: absolute;
-  width: 100%;
-  height: .2rem;
-  background-color: #0F5C9E;
 }
 
 .navbar__hamburgerIcon::after {
-  left: 0;
-  top: -.6rem;
+  -webkit-transform: translate(-1.6rem, 0.8rem);
+      -ms-transform: translate(-1.6rem, 0.8rem);
+          transform: translate(-1.6rem, 0.8rem);
 }
 
 .navbar__hamburgerIcon::before {
-  left: 0;
-  bottom: -.6rem;
+  -webkit-transform: translate(-1.6rem, -0.8rem);
+      -ms-transform: translate(-1.6rem, -0.8rem);
+          transform: translate(-1.6rem, -0.8rem);
 }
 
-.navbar__hamburgerIcon--active::after {
-  content: '';
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+.navbar__hamburgerIcon--change {
+  background-color: transparent;
 }
 
-.navbar__hamburgerIcon--active::before {
-  content: '';
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+.navbar__hamburgerIcon--change::after {
+  -webkit-transform: rotate(45deg) translate(-1rem, 1rem);
+      -ms-transform: rotate(45deg) translate(-1rem, 1rem);
+          transform: rotate(45deg) translate(-1rem, 1rem);
+}
+
+.navbar__hamburgerIcon--change::before {
+  -webkit-transform: rotate(-45deg) translate(-1rem, -1rem);
+      -ms-transform: rotate(-45deg) translate(-1rem, -1rem);
+          transform: rotate(-45deg) translate(-1rem, -1rem);
 }
 
 /*------------------- 漢堡選單元件(平板) -------------------*/
