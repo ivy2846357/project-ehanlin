@@ -13575,6 +13575,22 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .signForm {
+    /*----------- 顯示狀態 -----------*/
+  }
+  .signForm__enableLine--register {
+    -webkit-transform: translateX(7.35rem);
+        -ms-transform: translateX(7.35rem);
+            transform: translateX(7.35rem);
+  }
+  .signForm__enableLine--login {
+    -webkit-transform: translateX(-7.1rem);
+        -ms-transform: translateX(-7.1rem);
+            transform: translateX(-7.1rem);
+  }
+}
+
 /*------------------- 登入註冊內容(手機) -------------------*/
 @media (max-width: 576px) {
   .signForm {
