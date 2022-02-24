@@ -13387,8 +13387,8 @@ a {
 .signForm {
   margin-top: 3rem;
   padding: 9rem 0 7rem 0;
-  z-index: 10;
   position: relative;
+  z-index: 10;
   /*----------- 登入註冊標題 -----------*/
   /*----------- 顯示狀態 -----------*/
 }
@@ -13973,8 +13973,12 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 250% 120%;
-  position: relative;
   z-index: -1;
+}
+
+.background__wrapper {
+  z-index: 1;
+  position: relative;
 }
 
 .background__img {
