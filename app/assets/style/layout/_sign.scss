@@ -170,7 +170,7 @@
             background: none;
 
             &::after {
-                width: 0;
+                width: 50%;
             }
         }
 
@@ -233,6 +233,15 @@
 
     .signForm {
         padding: 0;
+
+        /*----------- 圖片背景設定 -----------*/
+
+        &__background {
+
+            &::after {
+                width: 0;
+            }
+        }
 
         /*----------- 顯示狀態 -----------*/
 
