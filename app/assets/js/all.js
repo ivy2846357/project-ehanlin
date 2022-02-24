@@ -15,6 +15,7 @@ $(document).ready(function () {
     /*----------- 移除註冊特效 -----------*/
 
     $('.registerBtn').removeClass('fw-bold').removeClass('text-primary').addClass('text-inactive');
+
     /*----------- 新增登入特效 -----------*/
 
     $('.loginBtn').addClass('fw-bold').addClass('text-primary');
@@ -23,6 +24,8 @@ $(document).ready(function () {
 
     $('.loginForm').addClass('d-block').removeClass('d-none');
     $('.registerForm').addClass('d-none').removeClass('d-block');
+    $('.signForm').addClass('signForm-changePadding');
+    $('.signForm').css('padding-bottom', '13.9rem');
   })
 
   $('.registerBtn').click(function (e) {
@@ -42,6 +45,8 @@ $(document).ready(function () {
 
     $('.loginForm').addClass('d-none').removeClass('d-block');
     $('.registerForm').addClass('d-block').removeClass('d-none');
+    $('.signForm').removeClass('signForm-changePadding');
+    $('.signForm').css('padding-bottom', '7rem');
   })
 
 

@@ -1,12 +1,12 @@
 /*------------------- 背景圖片設計 -------------------*/
 
 .background {
-    box-shadow: inset 0 0 10rem rgba(0, 0, 0, .1);
     background-image: url('../images/background.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 250% 120%;
     z-index: -1;
+    transition: background-image 1s;
 
     &__wrapper {
         z-index: 1;

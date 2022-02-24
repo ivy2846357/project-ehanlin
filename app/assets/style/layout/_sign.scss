@@ -2,7 +2,8 @@
 
 .signForm {
     margin-top: 3rem;
-    padding: 9rem 0 7rem 0;
+    padding-top: 9rem;
+    padding-bottom: 7rem;
     position: relative;
     z-index: 10;
 
@@ -46,11 +47,11 @@
         top: 3.4rem;
 
         &--register {
-            transform: translateX(8.85rem);
+            transform: translateX(9.1rem);
         }
 
         &--login {
-            transform: translateX(-8.85rem);
+            transform: translateX(-9.1rem);
         }
     }
 
@@ -68,7 +69,6 @@
 /*------------------- 登入表單樣式 -------------------*/
 
 .loginForm {
-    padding-bottom: 86px;
     display: none;
 }
 
