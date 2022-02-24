@@ -13385,34 +13385,11 @@ a {
 /*------------------- layout -------------------*/
 /*------------------- 登入註冊內容 -------------------*/
 .signForm {
-  margin-top: 5rem;
-  padding: 7rem 0;
-  /*----------- 圖片背景 -----------*/
+  margin-top: 3rem;
+  padding: 9rem 0 7rem 0;
+  z-index: 10;
   /*----------- 登入註冊標題 -----------*/
   /*----------- 顯示狀態 -----------*/
-}
-
-.signForm__background {
-  position: relative;
-  background-image: url("../images/online-education.svg");
-  background-repeat: no-repeat;
-  background-position: 90% center;
-  background-size: 50%;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  /*----------- 淺藍背景 -----------*/
-}
-
-.signForm__background::after {
-  content: '';
-  position: absolute;
-  width: 30%;
-  height: 100%;
-  background-color: #F6FBFF;
-  top: 0;
-  right: 0;
-  z-index: -1;
 }
 
 .signForm__title {
@@ -13453,20 +13430,22 @@ a {
 }
 
 .signForm__enableLine--register {
-  -webkit-transform: translateX(7.85rem);
-      -ms-transform: translateX(7.85rem);
-          transform: translateX(7.85rem);
+  -webkit-transform: translateX(8.85rem);
+      -ms-transform: translateX(8.85rem);
+          transform: translateX(8.85rem);
 }
 
 .signForm__enableLine--login {
-  -webkit-transform: translateX(-8rem);
-      -ms-transform: translateX(-8rem);
-          transform: translateX(-8rem);
+  -webkit-transform: translateX(-8.85rem);
+      -ms-transform: translateX(-8.85rem);
+          transform: translateX(-8.85rem);
 }
 
 /*------------------- 表單樣式 -------------------*/
 .signFormContent {
-  padding: .5rem 1.5rem;
+  padding: 2.5rem 2.5rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   border-radius: .5rem;
   background-color: #fff;
 }
@@ -13487,20 +13466,14 @@ a {
     background-size: 70%;
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(7.7rem);
-        -ms-transform: translateX(7.7rem);
-            transform: translateX(7.7rem);
+    -webkit-transform: translateX(10.6rem);
+        -ms-transform: translateX(10.6rem);
+            transform: translateX(10.6rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-7.6rem);
-        -ms-transform: translateX(-7.6rem);
-            transform: translateX(-7.6rem);
-  }
-  /*----------- 表單樣式 -----------*/
-  .signFormContent {
-    padding: 2.5rem 2.5rem;
-    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateX(-10.6rem);
+        -ms-transform: translateX(-10.6rem);
+            transform: translateX(-10.6rem);
   }
 }
 
@@ -13510,14 +13483,14 @@ a {
     /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(6.35rem);
-        -ms-transform: translateX(6.35rem);
-            transform: translateX(6.35rem);
+    -webkit-transform: translateX(8.75rem);
+        -ms-transform: translateX(8.75rem);
+            transform: translateX(8.75rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-6.2rem);
-        -ms-transform: translateX(-6.2rem);
-            transform: translateX(-6.2rem);
+    -webkit-transform: translateX(-8.75rem);
+        -ms-transform: translateX(-8.75rem);
+            transform: translateX(-8.75rem);
   }
   .signForm__title {
     position: relative;
@@ -13535,9 +13508,6 @@ a {
   }
   .signForm__background {
     background: none;
-  }
-  .signForm__background::after {
-    width: 50%;
   }
   .signForm__enableLine--register {
     -webkit-transform: translateX(8.2rem);
@@ -14006,21 +13976,88 @@ a {
   }
 }
 
-/*------------------- 導覽列 scrollbar -------------------*/
+/*------------------- 背景圖片設計 -------------------*/
+.background {
+  -webkit-box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.1);
+  background-image: url("../images/img-02.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 250% 120%;
+  position: relative;
+  z-index: -1;
+}
+
+.background__img {
+  position: absolute;
+  width: 98vw;
+  height: 150vh;
+  z-index: -2;
+  background-repeat: no-repeat;
+}
+
+.background__imgTopLeft {
+  background-image: url("../images/person-02.svg");
+  background-position: 1% 10%;
+  background-size: 23%;
+}
+
+.background__imgTopRight {
+  background-image: url("../images/person-05.svg");
+  background-position: 92% 30%;
+  background-size: 19%;
+}
+
+.background__imgBottomLeft {
+  background-image: url("../images/person-03.svg");
+  background-position: 13% 59%;
+  background-size: 19%;
+}
+
+.background__imgBottomRight {
+  background-image: url("../images/person-04.svg");
+  background-position: 82% 91%;
+  background-size: 16%;
+}
+
+/*------------------- 背景圖片設計(平板) -------------------*/
 @media (max-width: 1451px) {
-  .scrollbar {
-    overflow-y: scroll;
-    height: 100vh;
+  .background__imgTopLeft {
+    background-position: 1% 6%;
   }
-  /*
-     *  STYLE 3
-     */
-  #style-3::-webkit-scrollbar {
-    width: 6px;
-    background-color: transparent;
+  .background__imgTopRight {
+    background-position: 97% 30%;
   }
-  #style-3::-webkit-scrollbar-thumb {
-    background-color: transparent;
+  .background__imgBottomLeft {
+    background-position: 7% 59%;
+  }
+  .background__imgBottomRight {
+    background-position: 87% 91%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .background__imgTopLeft {
+    background-position: 2% 6%;
+    background-size: 27%;
+  }
+  .background__imgTopRight {
+    background-position: 99% 36%;
+    background-size: 27%;
+  }
+  .background__imgBottomLeft {
+    background-position: 3% 59%;
+    background-size: 22%;
+  }
+  .background__imgBottomRight {
+    background-position: 89% 99%;
+    background-size: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .background__imgTopLeft, .background__imgTopRight, .background__imgBottomLeft, .background__imgBottomRight {
+    background: none;
   }
 }
 
