@@ -168,6 +168,10 @@
 
         &__background {
             background: none;
+
+            &::after {
+                width: 0;
+            }
         }
 
         /*----------- 顯示狀態 -----------*/
@@ -235,11 +239,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(6.3rem);
+                transform: translateX(7.3rem);
             }
 
             &--login {
-                transform: translateX(-6.3rem);
+                transform: translateX(-7.3rem);
             }
         }
 
@@ -259,5 +263,24 @@
 
     .signFormContent {
         box-shadow: none;
+    }
+}
+
+@media(max-width: 376px) {
+
+    .signForm {
+
+        /*----------- 顯示狀態 -----------*/
+
+        &__enableLine {
+
+            &--register {
+                transform: translateX(4.6rem);
+            }
+
+            &--login {
+                transform: translateX(-4.6rem);
+            }
+        }
     }
 }
