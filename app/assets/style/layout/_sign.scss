@@ -56,6 +56,8 @@
         }
     }
 
+    /*----------- 登入註冊 padding 調整 -----------*/
+
     &__registerPadding {
         padding-bottom: 7rem;
     }
@@ -203,11 +205,13 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(20.5rem);
+                //transform: translateX(20.5em);
+                display: none;
             }
 
             &--login {
-                transform: translateX(5.45rem);
+                //transform: translateX(5.45em);
+                display: none;
             }
         }
 
@@ -227,28 +231,20 @@
 
     }
 
+    /*----------- 手機版底線 -----------*/
+
+    .loginBtn,
+    .registerBtn {
+        padding: .5rem;
+
+        &__phone--active {
+            border-bottom: .25rem solid $primary;
+        }
+    }
+
     /*----------- 表單樣式 -----------*/
 
     .signFormContent {
         box-shadow: none;
-    }
-}
-
-@media(max-width: 376px) {
-
-    .signForm {
-
-        /*----------- 顯示狀態 -----------*/
-
-        &__enableLine {
-
-            &--register {
-                transform: translateX(11.9rem);
-            }
-
-            &--login {
-                transform: translateX(2.6rem);
-            }
-        }
     }
 }
