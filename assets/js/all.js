@@ -58,5 +58,9 @@ $(document).ready(function () {
     $(this).toggleClass('dropdown__link--change');
     $(this).siblings().removeClass('dropdown__link--change');
   });
+  $('.nav-item').click(function (e) {
+    $('.dropdown').removeClass('dropdown__link--change');
+    $(this).siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
+  });
 });
 //# sourceMappingURL=all.js.map
