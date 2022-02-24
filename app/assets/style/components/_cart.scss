@@ -19,15 +19,6 @@
 }
 
 
-@media(max-width: 576px) {
-
-    .logo {
-        &__mobile {
-            transform: scale(.8);
-        }
-    }
-}
-
 /*------------------- 購物車元件(手機) -------------------*/
 
 @media(max-width: 576px) {
