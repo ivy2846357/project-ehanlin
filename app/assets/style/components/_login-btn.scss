@@ -1,14 +1,10 @@
-/*------------------- 自訂登入按鈕元件 -------------------*/
+/*------------------- 登入 icon(手機) -------------------*/
 
-@media(max-width: 1451px) {
+@media(max-width: 576px) {
 
-    .navbar {
+    /*----------- 元件縮小 -----------*/
 
-        &__loginBtn {
-            width: 100%;
-            border-radius: 0;
-        }
-
+    .loginIcon {
+        transform: scale(.8);
     }
-
 }
