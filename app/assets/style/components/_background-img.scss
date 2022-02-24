@@ -6,8 +6,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 250% 120%;
-    position: relative;
     z-index: -1;
+
+    &__wrapper {
+        z-index: 1;
+        position: relative;
+    }
 
     &__img {
         position: absolute;
