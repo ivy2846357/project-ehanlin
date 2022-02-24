@@ -4,6 +4,8 @@
     margin-top: 3rem;
     padding: 9rem 0 7rem 0;
     z-index: 10;
+    position: relative;
+
 
     /*----------- 登入註冊標題 -----------*/
 
@@ -77,12 +79,6 @@
 
     .signForm {
 
-        /*----------- 圖片背景設定 -----------*/
-
-        &__background {
-            background-size: 70%;
-        }
-
         /*----------- 顯示狀態 -----------*/
 
         &__enableLine {
@@ -134,12 +130,6 @@
 @media(max-width: 992px) {
 
     .signForm {
-
-        /*----------- 圖片背景設定 -----------*/
-
-        &__background {
-            background: none;
-        }
 
         /*----------- 顯示狀態 -----------*/
 
@@ -200,15 +190,6 @@
 
     .signForm {
         padding: 0;
-
-        /*----------- 圖片背景設定 -----------*/
-
-        &__background {
-
-            &::after {
-                width: 0;
-            }
-        }
 
         /*----------- 顯示狀態 -----------*/
 
