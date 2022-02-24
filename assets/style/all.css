@@ -13746,6 +13746,29 @@ a {
   right: 1rem;
 }
 
+@media (max-width: 576px) {
+  .logo__mobile {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+/*------------------- 購物車元件(手機) -------------------*/
+@media (max-width: 576px) {
+  /*----------- 元件縮小 -----------*/
+  .cart {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    /*----------- 目前購物車數量 -----------*/
+  }
+  .cart__alert {
+    top: .1rem;
+    right: -.1rem;
+  }
+}
+
 /*------------------- 自訂主導覽列元件 -------------------*/
 .nav {
   /*----------- 電腦版 hover 效果 -----------*/
@@ -13785,6 +13808,16 @@ a {
   }
   .nav-item:last-child {
     border: none;
+  }
+}
+
+/*------------------- 導覽列 logo(手機) -------------------*/
+@media (max-width: 576px) {
+  /*----------- 元件縮小 -----------*/
+  .logo__mobile {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -13864,11 +13897,8 @@ a {
     border-radius: 0;
   }
   .dropdown__item {
-    padding: 1rem 3.5rem;
+    padding: .5rem 3.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .dropdown__item:last-child {
-    border-bottom: none;
   }
   .dropdown__link--change {
     background-color: #BEE1FF;
@@ -13968,6 +13998,15 @@ a {
 @media (max-width: 1451px) {
   .navbar__hamburgerIcon {
     display: block;
+  }
+}
+
+/*------------------- 漢堡選單元件(手機) -------------------*/
+@media (max-width: 1451px) {
+  .navbar__hamburgerIcon {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
