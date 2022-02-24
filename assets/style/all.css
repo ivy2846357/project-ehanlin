@@ -13852,7 +13852,7 @@ a {
     border-radius: 0;
   }
   .dropdown__item {
-    padding: .5rem 3.5rem;
+    padding: .5rem 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .dropdown__link--change {
