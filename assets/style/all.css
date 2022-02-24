@@ -13573,6 +13573,10 @@ a {
   .loginBtn,
   .registerBtn {
     padding: .5rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border-bottom: .25rem solid transparent;
   }
   .loginBtn__phone--active,
   .registerBtn__phone--active {
@@ -13682,12 +13686,6 @@ a {
   }
 }
 
-/*------------------- 特效樣式 -------------------*/
-.effect__shadow {
-  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-}
-
 /*------------------- 購物車元件 -------------------*/
 .cartIcon {
   position: relative;
@@ -13702,8 +13700,16 @@ a {
   border-radius: 50%;
   font-size: .5rem;
   position: absolute;
-  top: 0.1rem;
-  right: -0.3rem;
+  top: 1.1rem;
+  right: 0.9rem;
+}
+
+/*------------------- 購物車元件(平板) -------------------*/
+@media (max-width: 1451px) {
+  .cartIcon__alert {
+    top: .1rem;
+    right: -.1rem;
+  }
 }
 
 /*------------------- 購物車元件(手機) -------------------*/
@@ -13713,12 +13719,13 @@ a {
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
             transform: scale(0.8);
-    /*----------- 目前購物車數量 -----------*/
   }
-  .cartIcon__alert {
-    top: .1rem;
-    right: -.1rem;
-  }
+}
+
+/*------------------- 特效樣式 -------------------*/
+.effect__shadow {
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 /*------------------- 自訂主導覽列元件 -------------------*/
