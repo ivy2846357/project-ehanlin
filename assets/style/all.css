@@ -13386,7 +13386,8 @@ a {
 /*------------------- 登入註冊內容 -------------------*/
 .signForm {
   margin-top: 3rem;
-  padding: 9rem 0 7rem 0;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
   position: relative;
   z-index: 10;
   /*----------- 登入註冊標題 -----------*/
@@ -13431,15 +13432,15 @@ a {
 }
 
 .signForm__enableLine--register {
-  -webkit-transform: translateX(8.85rem);
-      -ms-transform: translateX(8.85rem);
-          transform: translateX(8.85rem);
+  -webkit-transform: translateX(9.1rem);
+      -ms-transform: translateX(9.1rem);
+          transform: translateX(9.1rem);
 }
 
 .signForm__enableLine--login {
-  -webkit-transform: translateX(-8.85rem);
-      -ms-transform: translateX(-8.85rem);
-          transform: translateX(-8.85rem);
+  -webkit-transform: translateX(-9.1rem);
+      -ms-transform: translateX(-9.1rem);
+          transform: translateX(-9.1rem);
 }
 
 /*------------------- 表單樣式 -------------------*/
@@ -13453,7 +13454,6 @@ a {
 
 /*------------------- 登入表單樣式 -------------------*/
 .loginForm {
-  padding-bottom: 86px;
   display: none;
 }
 
@@ -13682,13 +13682,6 @@ a {
 .effect__shadow {
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-/*------------------- 圖片位置 -------------------*/
-.education__pic {
-  position: absolute;
-  right: -10rem;
-  top: -2rem;
 }
 
 /*------------------- 購物車元件 -------------------*/
@@ -13967,13 +13960,14 @@ a {
 
 /*------------------- 背景圖片設計 -------------------*/
 .background {
-  -webkit-box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.1);
   background-image: url("../images/background.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 250% 120%;
   z-index: -1;
+  -webkit-transition: background-image 1s;
+  -o-transition: background-image 1s;
+  transition: background-image 1s;
 }
 
 .background__wrapper {
