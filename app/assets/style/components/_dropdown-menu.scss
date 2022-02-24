@@ -26,13 +26,14 @@
 
     &__item {
         padding: 1rem 1.5rem;
+        background-color: $primary;
     }
 
     &__itemHover {
-        color: $primary;
+        color: #fff;
 
         &:hover {
-            background-color: $primary;
+            background-color: $auxiliary-dark;
             color: #fff;
         }
     }
