@@ -2,10 +2,12 @@
 
 /*------------------- 動畫效果 -------------------*/
 $(document).ready(function () {
-  /*----------- 登入註冊狀態轉換 -----------*/
+  /*----------- 登入狀態轉換 -----------*/
   $('.loginBtn').click(function (e) {
     /*----------- 底線位置移動 -----------*/
     $('.signForm__enableLine').removeClass('signForm__enableLine--register').addClass('signForm__enableLine--login');
+    $('.loginBtn').addClass('loginBtn__phone--active');
+    $('.registerBtn').removeClass('registerBtn__phone--active');
     /*----------- 移除註冊特效 -----------*/
 
     $('.registerBtn').removeClass('fw-bold').removeClass('text-primary').addClass('text-inactive');
@@ -18,9 +20,13 @@ $(document).ready(function () {
     $('.registerForm').addClass('d-none').removeClass('d-block');
     $('.signForm').addClass('signForm__loginPadding').removeClass('signForm__registerPadding');
   });
+  /*----------- 註冊狀態轉換 -----------*/
+
   $('.registerBtn').click(function (e) {
     /*----------- 底線位置移動 -----------*/
     $('.signForm__enableLine').removeClass('signForm__enableLine--login').addClass('signForm__enableLine--register');
+    $('.registerBtn').addClass('registerBtn__phone--active');
+    $('.loginBtn').removeClass('loginBtn__phone--active');
     /*----------- 移除登入特效 -----------*/
 
     $('.loginBtn').removeClass('fw-bold').removeClass('text-primary').addClass('text-inactive');

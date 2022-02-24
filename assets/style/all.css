@@ -13392,6 +13392,7 @@ a {
   z-index: 10;
   /*----------- 登入註冊標題 -----------*/
   /*----------- 顯示狀態 -----------*/
+  /*----------- 登入註冊 padding 調整 -----------*/
 }
 
 .signForm__title {
@@ -13557,14 +13558,10 @@ a {
     /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(20.5rem);
-        -ms-transform: translateX(20.5rem);
-            transform: translateX(20.5rem);
+    display: none;
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(5.45rem);
-        -ms-transform: translateX(5.45rem);
-            transform: translateX(5.45rem);
+    display: none;
   }
   .signForm__title::after, .signForm__title::before {
     width: 5rem;
@@ -13572,26 +13569,19 @@ a {
   .signForm__loginPadding {
     padding-bottom: 0;
   }
+  /*----------- 手機版底線 -----------*/
+  .loginBtn,
+  .registerBtn {
+    padding: .5rem;
+  }
+  .loginBtn__phone--active,
+  .registerBtn__phone--active {
+    border-bottom: 0.25rem solid #0F5C9E;
+  }
   /*----------- 表單樣式 -----------*/
   .signFormContent {
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-}
-
-@media (max-width: 376px) {
-  .signForm {
-    /*----------- 顯示狀態 -----------*/
-  }
-  .signForm__enableLine--register {
-    -webkit-transform: translateX(11.9rem);
-        -ms-transform: translateX(11.9rem);
-            transform: translateX(11.9rem);
-  }
-  .signForm__enableLine--login {
-    -webkit-transform: translateX(2.6rem);
-        -ms-transform: translateX(2.6rem);
-            transform: translateX(2.6rem);
   }
 }
 
