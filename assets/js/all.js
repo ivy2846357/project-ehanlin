@@ -2,7 +2,11 @@
 
 /*------------------- 動畫效果 -------------------*/
 $(document).ready(function () {
+  $('.dropdown').click(function (e) {
+    e.stopPropagation();
+  });
   /*----------- 登入狀態轉換 -----------*/
+
   $('.loginBtn').click(function (e) {
     /*----------- 底線位置移動 -----------*/
     $('.signForm__enableLine').removeClass('signForm__enableLine--register').addClass('signForm__enableLine--login');
@@ -54,12 +58,12 @@ $(document).ready(function () {
   });
   /*----------- 標註當前點選的下拉選單效果 -----------*/
 
-  $('.dropdown').click(function (e) {
-    $(this).toggleClass('dropdown__link--change');
-    $(this).siblings().removeClass('dropdown__link--change');
-  });
   $('.nav-item').click(function (e) {
-    $('.dropdown').removeClass('dropdown__link--change');
+    if ($(this).hasClass('dropdown')) {
+      $(this).toggleClass('dropdown__link--change');
+    }
+
+    $(this).siblings().removeClass('dropdown__link--change');
     $(this).siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
   });
 });

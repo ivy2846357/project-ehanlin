@@ -13828,14 +13828,15 @@ a {
 
 .dropdown__item {
   padding: 1rem 1.5rem;
+  background-color: #0F5C9E;
 }
 
 .dropdown__itemHover {
-  color: #0F5C9E;
+  color: #fff;
 }
 
 .dropdown__itemHover:hover {
-  background-color: #0F5C9E;
+  background-color: #084477;
   color: #fff;
 }
 
@@ -14057,6 +14058,30 @@ a {
   .background__imgTopLeft, .background__imgTopRight, .background__imgBottomLeft, .background__imgBottomRight {
     background: none;
   }
+}
+
+/*------------------- 手機版巢狀下拉子選單樣式 -------------------*/
+.mobileDropdown__hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+  background-color: #0F5C9E;
+}
+
+.mobileDropdown__hover:hover {
+  background-color: #084477;
+}
+
+.mobileDropdown__arrow {
+  color: #fff;
+}
+
+.mobileDropdown__item {
+  background-color: #084477;
+  padding: 0.5rem 4.5rem;
+}
+
+.mobileDropdown__item:hover {
+  background-color: #062036 !important;
 }
 
 /*# sourceMappingURL=all.css.map */
