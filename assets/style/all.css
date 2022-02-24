@@ -13656,8 +13656,8 @@ a {
 }
 
 .btn-primary:hover {
-  -webkit-box-shadow: inset 50rem 0 0 0 #084477;
-          box-shadow: inset 50rem 0 0 0 #084477;
+  -webkit-box-shadow: inset 90rem 0 0 0 #084477;
+          box-shadow: inset 90rem 0 0 0 #084477;
 }
 
 .btn-emphasize {

@@ -35,6 +35,8 @@ $(document).ready(function () {
 
   $('.navbar__hamburger').click(function (e) {
     $('.navbar__hamburgerIcon').toggleClass('navbar__hamburgerIcon--change');
+    $('.dropdown').removeClass('dropdown__link--change');
+    $('.dropdown__arrow').removeClass('dropdown__arrow--change');
   });
   /*----------- 下拉選單箭頭轉換 -----------*/
 
