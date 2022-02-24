@@ -17,13 +17,6 @@
 
   <nav class="navbar navbar-expand-xxl navbar-light pb-0 pb-xx1-2 py-xxl-0 px-xxl-9 effect__shadow fixed-top">
     <div class="container-fluid px-0">
-      <!-- 漢堡選單 -->
-      <button class="navbar__hamburger me-2 me-sm-6 me-xxl-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <div class="navbar__hamburgerIcon"></div>
-      </button>
       <!-- 品牌 LOGO -->
       <a class="navbar-brand me-0 ms-2 ms-sm-6 ms-xxl-0" href="#">
         <img src="./assets/images/ehanlin-logo-newyear.svg" class="d-none d-lg-block" alt="ehanlin-logo-newyear">
@@ -40,6 +33,7 @@
           </svg>
           <p class="d-flex justify-content-center align-items-center p-2 mb-0 cartIcon__alert">0</p>
         </a>
+        <!-- 登入(mobile) -->
         <a href="#" class="loginIcon p-1 p-sm-4 d-block d-xxl-none">
           <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
             class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
@@ -49,11 +43,19 @@
               d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
           </svg>
         </a>
+        <!-- 漢堡選單 -->
+        <button class="navbar__hamburger me-2 me-sm-6 me-xxl-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class="navbar__hamburgerIcon"></div>
+        </button>
       </div>
       <!-- 導覽列表 -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- 左側選單 -->
         <div class="navbar-nav ms-auto navbar-nav-scroll" style="--bs-scroll-height: 38rem;">
+          <!-- e課程 -->
           <li class="nav-item dropdown">
             <a class="nav-link py-xxl-6 py-2 px-6 px-xxl-3 d-flex align-items-center nav__hover dropdown__link" href="#"
               id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,21 +78,25 @@
               <li><a class="dropdown-item dropdown__item dropdown__itemHover" href="#">e評量</a></li>
             </ul>
           </li>
+          <!-- 免費試用 -->
           <li class="nav-item">
             <a class="nav-link py-xxl-6 py-2 px-xxl-3 px-6 nav__hover" href="#">
               <span class="nav__text">免費試用</span>
             </a>
           </li>
+          <!-- 課程總覽 -->
           <li class="nav-item">
             <a class="nav-link py-xxl-6 py-2 px-xxl-3 px-6 nav__hover nav__text" href="#">
               <span class="nav__text">課程總覽</span>
             </a>
           </li>
+          <!-- 課程開通 -->
           <li class="nav-item">
             <a class="nav-link py-xxl-6 py-2 px-xxl-3 px-6 nav__hover nav__text" href="#">
               <span class="nav__text">課程開通</span>
             </a>
           </li>
+          <!-- 活動專區 -->
           <li class="nav-item dropdown">
             <a class="nav-link py-xxl-6 py-2 px-xxl-3 px-6 nav__hover d-flex align-items-center dropdown__link" href="#"
               id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -121,6 +127,7 @@
             </a>
             <div class="dropdown-menu mt-0 p-0 dropdown__menu dropdown__menuPluralCol" aria-labelledby="navbarDropdown">
               <div class="d-md-flex">
+                <!-- 國中會考 -->
                 <ul class="list-unstyled mb-0 subDropdown__menu">
                   <li class="text-primary fw-bold dropdown__item dropdown__subTitle">國中會考</li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">110會考命中分析</a></li>
@@ -128,17 +135,20 @@
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">會考解題專區</a></li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">歷屆考題下載</a></li>
                 </ul>
+                <!-- 高中學測 -->
                 <ul class="list-unstyled mb-0 subDropdown__menu">
                   <li class="text-primary fw-bold dropdown__item dropdown__subTitle">高中學測</li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">學測趨勢解密</a></li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">學測解題專區</a></li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">歷屆考題下載</a></li>
                 </ul>
+                <!-- 高中指考 -->
                 <ul class="list-unstyled mb-0 subDropdown__menu">
                   <li class="text-primary fw-bold dropdown__item dropdown__subTitle">高中指考</li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">指考解題專區</a></li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">歷屆考題下載</a></li>
                 </ul>
+                <!-- 參考書 -->
                 <ul class="list-unstyled mb-0 subDropdown__menu">
                   <li class="text-primary fw-bold dropdown__item dropdown__subTitle">參考書</li>
                   <li><a href="#" class="dropdown-item dropdown__item dropdown__itemHover">線上資源</a></li>
@@ -159,6 +169,7 @@
             </a>
             <ul class="dropdown-menu mt-0 p-0 dropdown__menu dropdown__menuPluralCol" aria-labelledby="navbarDropdown">
               <!-- 巢狀子選單 -->
+              <!-- 國中會考 -->
               <ul class="list-unstyled mb-0 subDropdown__menu">
                 <li class="nav-item dropdown">
                   <a class="nav-link px-8 mobileDropdown__hover d-flex align-items-center dropdown__link" href="#"
@@ -182,6 +193,7 @@
                   </ul>
                 </li>
               </ul>
+              <!-- 高中學測 -->
               <ul class="list-unstyled mb-0 subDropdown__menu">
                 <li class="nav-item dropdown">
                   <a class="nav-link px-8 mobileDropdown__hover d-flex align-items-center dropdown__link" href="#"
@@ -203,6 +215,7 @@
                   </ul>
                 </li>
               </ul>
+              <!-- 高中指考 -->
               <ul class="list-unstyled mb-0 subDropdown__menu">
                 <li class="nav-item dropdown">
                   <a class="nav-link px-8 mobileDropdown__hover d-flex align-items-center dropdown__link" href="#"
@@ -223,6 +236,7 @@
                   </ul>
                 </li>
               </ul>
+              <!-- 參考書專區 -->
               <li><a class="dropdown-item ps-8 dropdown__item dropdown__itemHover" href="#">參考書專區</a></li>
             </ul>
           </li>

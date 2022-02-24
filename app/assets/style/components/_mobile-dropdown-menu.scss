@@ -2,6 +2,8 @@
 
 .mobileDropdown {
 
+    /*----------- 選單樣式 -----------*/
+
     &__hover {
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         color: #fff !important;
@@ -12,9 +14,13 @@
         }
     }
 
+    /*----------- 箭頭樣式 -----------*/
+
     &__arrow {
         color: #fff;
     }
+
+    /*----------- 下層選單樣式 -----------*/
 
     &__item {
         background-color: $auxiliary-dark;
