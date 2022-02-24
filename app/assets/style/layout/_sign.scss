@@ -45,16 +45,24 @@
         height: .25rem;
         background-color: $primary;
         top: 3.4rem;
+        left: 0;
 
         &--register {
-            transform: translateX(9.1rem);
+            transform: translateX(25.25rem);
         }
 
         &--login {
-            transform: translateX(-9.1rem);
+            transform: translateX(7.1rem);
         }
     }
 
+    &__registerPadding {
+        padding-bottom: 7rem;
+    }
+
+    &__loginPadding {
+        padding-bottom: 13.9rem;
+    }
 }
 
 /*------------------- 表單樣式 -------------------*/
@@ -83,11 +91,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(10.6rem);
+                transform: translateX(29.9rem);
             }
 
             &--login {
-                transform: translateX(-10.6rem);
+                transform: translateX(8.6rem);
             }
         }
 
@@ -104,11 +112,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(8.75rem);
+                transform: translateX(24.3rem);
             }
 
             &--login {
-                transform: translateX(-8.75rem);
+                transform: translateX(6.7rem);
             }
         }
 
@@ -135,11 +143,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(8.2rem);
+                transform: translateX(22.5rem);
             }
 
             &--login {
-                transform: translateX(-8.05rem);
+                transform: translateX(6.2rem);
             }
         }
 
@@ -172,11 +180,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(7.35rem);
+                transform: translateX(19.6rem);
             }
 
             &--login {
-                transform: translateX(-7.1rem);
+                transform: translateX(5.2rem);
             }
         }
 
@@ -195,11 +203,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(7.3rem);
+                transform: translateX(20.5rem);
             }
 
             &--login {
-                transform: translateX(-7.3rem);
+                transform: translateX(5.45rem);
             }
         }
 
@@ -211,6 +219,10 @@
             &::before {
                 width: 5rem;
             }
+        }
+
+        &__loginPadding {
+            padding-bottom: 0;
         }
 
     }
@@ -231,11 +243,11 @@
         &__enableLine {
 
             &--register {
-                transform: translateX(4.6rem);
+                transform: translateX(11.9rem);
             }
 
             &--login {
-                transform: translateX(-4.6rem);
+                transform: translateX(2.6rem);
             }
         }
     }
