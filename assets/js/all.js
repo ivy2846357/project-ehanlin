@@ -16,8 +16,7 @@ $(document).ready(function () {
 
     $('.loginForm').addClass('d-block').removeClass('d-none');
     $('.registerForm').addClass('d-none').removeClass('d-block');
-    $('.signForm').addClass('signForm-changePadding');
-    $('.signForm').css('padding-bottom', '13.9rem');
+    $('.signForm').addClass('signForm__loginPadding').removeClass('signForm__registerPadding');
   });
   $('.registerBtn').click(function (e) {
     /*----------- 底線位置移動 -----------*/
@@ -32,8 +31,7 @@ $(document).ready(function () {
 
     $('.loginForm').addClass('d-none').removeClass('d-block');
     $('.registerForm').addClass('d-block').removeClass('d-none');
-    $('.signForm').removeClass('signForm-changePadding');
-    $('.signForm').css('padding-bottom', '7rem');
+    $('.signForm').removeClass('signForm__loginPadding').addClass('signForm__registerPadding');
   });
   /*----------- 漢堡選單轉換 -----------*/
 

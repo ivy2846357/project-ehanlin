@@ -13429,18 +13429,27 @@ a {
   height: .25rem;
   background-color: #0F5C9E;
   top: 3.4rem;
+  left: 0;
 }
 
 .signForm__enableLine--register {
-  -webkit-transform: translateX(9.1rem);
-      -ms-transform: translateX(9.1rem);
-          transform: translateX(9.1rem);
+  -webkit-transform: translateX(25.25rem);
+      -ms-transform: translateX(25.25rem);
+          transform: translateX(25.25rem);
 }
 
 .signForm__enableLine--login {
-  -webkit-transform: translateX(-9.1rem);
-      -ms-transform: translateX(-9.1rem);
-          transform: translateX(-9.1rem);
+  -webkit-transform: translateX(7.1rem);
+      -ms-transform: translateX(7.1rem);
+          transform: translateX(7.1rem);
+}
+
+.signForm__registerPadding {
+  padding-bottom: 7rem;
+}
+
+.signForm__loginPadding {
+  padding-bottom: 13.9rem;
 }
 
 /*------------------- 表單樣式 -------------------*/
@@ -13463,14 +13472,14 @@ a {
     /*----------- 顯示狀態 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(10.6rem);
-        -ms-transform: translateX(10.6rem);
-            transform: translateX(10.6rem);
+    -webkit-transform: translateX(29.9rem);
+        -ms-transform: translateX(29.9rem);
+            transform: translateX(29.9rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-10.6rem);
-        -ms-transform: translateX(-10.6rem);
-            transform: translateX(-10.6rem);
+    -webkit-transform: translateX(8.6rem);
+        -ms-transform: translateX(8.6rem);
+            transform: translateX(8.6rem);
   }
 }
 
@@ -13480,14 +13489,14 @@ a {
     /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(8.75rem);
-        -ms-transform: translateX(8.75rem);
-            transform: translateX(8.75rem);
+    -webkit-transform: translateX(24.3rem);
+        -ms-transform: translateX(24.3rem);
+            transform: translateX(24.3rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-8.75rem);
-        -ms-transform: translateX(-8.75rem);
-            transform: translateX(-8.75rem);
+    -webkit-transform: translateX(6.7rem);
+        -ms-transform: translateX(6.7rem);
+            transform: translateX(6.7rem);
   }
   .signForm__title {
     position: relative;
@@ -13503,14 +13512,14 @@ a {
     /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(8.2rem);
-        -ms-transform: translateX(8.2rem);
-            transform: translateX(8.2rem);
+    -webkit-transform: translateX(22.5rem);
+        -ms-transform: translateX(22.5rem);
+            transform: translateX(22.5rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-8.05rem);
-        -ms-transform: translateX(-8.05rem);
-            transform: translateX(-8.05rem);
+    -webkit-transform: translateX(6.2rem);
+        -ms-transform: translateX(6.2rem);
+            transform: translateX(6.2rem);
   }
   .signForm__title {
     position: relative;
@@ -13529,14 +13538,14 @@ a {
     /*----------- 顯示狀態 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(7.35rem);
-        -ms-transform: translateX(7.35rem);
-            transform: translateX(7.35rem);
+    -webkit-transform: translateX(19.6rem);
+        -ms-transform: translateX(19.6rem);
+            transform: translateX(19.6rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-7.1rem);
-        -ms-transform: translateX(-7.1rem);
-            transform: translateX(-7.1rem);
+    -webkit-transform: translateX(5.2rem);
+        -ms-transform: translateX(5.2rem);
+            transform: translateX(5.2rem);
   }
 }
 
@@ -13548,17 +13557,20 @@ a {
     /*----------- 登入註冊標題 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(7.3rem);
-        -ms-transform: translateX(7.3rem);
-            transform: translateX(7.3rem);
+    -webkit-transform: translateX(20.5rem);
+        -ms-transform: translateX(20.5rem);
+            transform: translateX(20.5rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-7.3rem);
-        -ms-transform: translateX(-7.3rem);
-            transform: translateX(-7.3rem);
+    -webkit-transform: translateX(5.45rem);
+        -ms-transform: translateX(5.45rem);
+            transform: translateX(5.45rem);
   }
   .signForm__title::after, .signForm__title::before {
     width: 5rem;
+  }
+  .signForm__loginPadding {
+    padding-bottom: 0;
   }
   /*----------- 表單樣式 -----------*/
   .signFormContent {
@@ -13572,14 +13584,14 @@ a {
     /*----------- 顯示狀態 -----------*/
   }
   .signForm__enableLine--register {
-    -webkit-transform: translateX(4.6rem);
-        -ms-transform: translateX(4.6rem);
-            transform: translateX(4.6rem);
+    -webkit-transform: translateX(11.9rem);
+        -ms-transform: translateX(11.9rem);
+            transform: translateX(11.9rem);
   }
   .signForm__enableLine--login {
-    -webkit-transform: translateX(-4.6rem);
-        -ms-transform: translateX(-4.6rem);
-            transform: translateX(-4.6rem);
+    -webkit-transform: translateX(2.6rem);
+        -ms-transform: translateX(2.6rem);
+            transform: translateX(2.6rem);
   }
 }
 
