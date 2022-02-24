@@ -13537,7 +13537,7 @@ a {
     background: none;
   }
   .signForm__background::after {
-    width: 0;
+    width: 50%;
   }
   .signForm__enableLine--register {
     -webkit-transform: translateX(8.2rem);
@@ -13581,8 +13581,12 @@ a {
 @media (max-width: 576px) {
   .signForm {
     padding: 0;
+    /*----------- 圖片背景設定 -----------*/
     /*----------- 顯示狀態 -----------*/
     /*----------- 登入註冊標題 -----------*/
+  }
+  .signForm__background::after {
+    width: 0;
   }
   .signForm__enableLine--register {
     -webkit-transform: translateX(7.3rem);
