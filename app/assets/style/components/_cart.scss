@@ -17,3 +17,31 @@
         right: 1rem;
     }
 }
+
+
+@media(max-width: 576px) {
+
+    .logo {
+        &__mobile {
+            transform: scale(.8);
+        }
+    }
+}
+
+/*------------------- 購物車元件(手機) -------------------*/
+
+@media(max-width: 576px) {
+
+    /*----------- 元件縮小 -----------*/
+
+    .cart {
+        transform: scale(.8);
+
+        /*----------- 目前購物車數量 -----------*/
+
+        &__alert {
+            top: .1rem;
+            right: -.1rem;
+        }
+    }
+}
