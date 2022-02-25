@@ -55,16 +55,19 @@ $(document).ready(function () {
   $('.dropdown__link').click(function (e) {
     $(this).find('.dropdown__arrow').toggleClass('dropdown__arrow--change');
     $(this).parent().siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
+    $(this).toggleClass('dropdown__link--change');
+    $(this).parent().siblings().find('.dropdown__link').removeClass('dropdown__link--change');
   });
   /*----------- 標註當前點選的下拉選單效果 -----------*/
-
-  $('.nav-item').click(function (e) {
-    if ($(this).hasClass('dropdown')) {
-      $(this).toggleClass('dropdown__link--change');
-    }
-
-    $(this).siblings().removeClass('dropdown__link--change');
-    $(this).siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
-  });
+  // $('.nav-item').click(function (e) {
+  //   if ($(this).hasClass('dropdown')) {
+  //     $(this).toggleClass('dropdown__link--change');
+  //   }
+  //   if ($(this).hasClass('mobileDropdown')) {
+  //     $(this).find('.mobileDropdown__link').toggleClass('mobileDropdown__link--change');
+  //   }
+  //   $(this).siblings().removeClass('dropdown__link--change');
+  //   $(this).siblings().find('a > .dropdown__arrow').removeClass('dropdown__arrow--change');
+  // })
 });
 //# sourceMappingURL=all.js.map

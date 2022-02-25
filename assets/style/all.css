@@ -13798,6 +13798,7 @@ a {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+  color: #fff;
 }
 
 /*------------------- 自訂下拉子選單樣式 -------------------*/
@@ -13828,15 +13829,15 @@ a {
 
 .dropdown__item {
   padding: 1rem 1.5rem;
-  background-color: #0F5C9E;
+  background-color: #fff;
 }
 
 .dropdown__itemHover {
-  color: #fff;
+  color: #0F5C9E;
 }
 
 .dropdown__itemHover:hover {
-  background-color: #084477;
+  background-color: #0F5C9E;
   color: #fff;
 }
 
@@ -13866,6 +13867,7 @@ a {
   .dropdown__subTitle {
     background-color: #F6FBFF;
   }
+  /*----------- 升學專區子選單樣式 -----------*/
   .subDropdown__menu {
     width: 25%;
   }
@@ -13873,8 +13875,22 @@ a {
 
 /*------------------- 下拉子選單樣式(手機) -------------------*/
 @media (max-width: 768px) {
+  /*----------- 升學專區子選單樣式 -----------*/
   .subDropdown__menu {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /*----------- 升學專區子選單樣式 -----------*/
+  .dropdown__item {
+    background-color: #0F5C9E;
+  }
+  .dropdown__itemHover {
+    color: #fff;
+  }
+  .dropdown__itemHover:hover {
+    background-color: #084477;
   }
 }
 
@@ -14062,19 +14078,8 @@ a {
 
 /*------------------- 手機版巢狀下拉子選單樣式 -------------------*/
 .mobileDropdown {
-  /*----------- 選單樣式 -----------*/
   /*----------- 箭頭樣式 -----------*/
   /*----------- 下層選單樣式 -----------*/
-}
-
-.mobileDropdown__hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: #fff !important;
-  background-color: #0F5C9E;
-}
-
-.mobileDropdown__hover:hover {
-  background-color: #084477;
 }
 
 .mobileDropdown__arrow {
@@ -14082,12 +14087,27 @@ a {
 }
 
 .mobileDropdown__item {
-  background-color: #084477;
-  padding: 0.5rem 4.5rem;
+  padding: .5rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+  background-color: #0F5C9E;
 }
 
 .mobileDropdown__item:hover {
-  background-color: #062036 !important;
+  background-color: #084477;
+}
+
+.mobileDropdown__subItem {
+  background-color: #0b2f50;
+  padding: 0.5rem 4.5rem;
+}
+
+.mobileDropdown__subItem:hover {
+  background-color: #00182c !important;
+}
+
+.mobileDropdown__link--change {
+  background-color: #084477;
 }
 
 /*# sourceMappingURL=all.css.map */
