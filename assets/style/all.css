@@ -13749,6 +13749,7 @@ a {
 /*------------------- 自訂主導覽列元件 -------------------*/
 .nav {
   /*----------- 電腦版 hover 效果 -----------*/
+  /*----------- 電腦版 click 效果 -----------*/
   /*----------- 修改 nav-link 樣式 -----------*/
 }
 
@@ -13757,6 +13758,10 @@ a {
 }
 
 .nav__hover:hover {
+  border-bottom: 0.5rem solid #0F5C9E;
+}
+
+.nav--click {
   border-bottom: 0.5rem solid #0F5C9E;
 }
 
@@ -13776,6 +13781,9 @@ a {
   .nav__hover:hover {
     border-bottom: none;
     background-color: #0F5C9E;
+  }
+  .nav--click {
+    border-bottom: none;
   }
   .nav-link:hover {
     color: #fff !important;

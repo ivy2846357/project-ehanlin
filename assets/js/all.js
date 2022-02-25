@@ -5,6 +5,10 @@ $(document).ready(function () {
   $('.mobileDropdown__menu').click(function (e) {
     e.stopPropagation();
   });
+  $('.nav__hover').click(function (e) {
+    $(this).toggleClass('nav--click');
+    $(this).parent().siblings().find('.nav__hover').removeClass('nav--click');
+  });
   /*----------- 登入狀態轉換 -----------*/
 
   $('.loginBtn').click(function (e) {
