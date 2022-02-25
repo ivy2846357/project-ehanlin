@@ -39,35 +39,6 @@ LOGO 主題是新年，配色以藍色及紅色為主，並搭配虎年及新年
   - copyright 改放置最尾端
 
 
-## 資料夾結構
-
-- app
-  -assets
-    -image
-    -js
-      -all.js
-    -style
-      -base
-        -_base.scss
-      -components
-        -_background-img.scss
-        -_btn.scss
-        -_cart-icon.scss
-        -_dropdown-arrow.scss
-        -_dropdown-menu.scss
-        -_effect.scss
-        -_hamburger-icon.scss
-        -_login-btn.scss
-        -_nav.scss
-      -helpers
-        -_variables.scss
-      -layout
-        -_footer.scss
-        -_sign.scss
-      -all.scss
-  -index.html
-  -layout.ejs
-
 ## 資料來源
 
 圖片及 LOGO 皆有使用 freepik 圖庫再稍加修改
