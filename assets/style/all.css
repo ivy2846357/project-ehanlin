@@ -13798,7 +13798,17 @@ a {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  color: #fff;
+  color: #BEE1FF;
+}
+
+/*------------------- 導覽列下拉選單箭頭(mobile) -------------------*/
+@media (max-width: 1451px) {
+  .dropdown__arrow {
+    /*----------- 下拉選單箭頭動畫 -----------*/
+  }
+  .dropdown__arrow--change {
+    color: #fff;
+  }
 }
 
 /*------------------- 自訂下拉子選單樣式 -------------------*/
@@ -13853,6 +13863,7 @@ a {
     /*----------- 下拉選單副標題 -----------*/
   }
   .dropdown__menu {
+    background-color: #084477;
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: 0;
@@ -13860,15 +13871,21 @@ a {
   .dropdown__item {
     padding: .5rem 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #084477;
+    color: #fff !important;
+  }
+  .dropdown__itemHover:hover {
+    background-color: #0b2f50;
   }
   .dropdown__link--change {
     background-color: #BEE1FF;
   }
   .dropdown__subTitle {
-    background-color: #F6FBFF;
+    background-color: #0F5C9E;
   }
   /*----------- 升學專區子選單樣式 -----------*/
   .subDropdown__menu {
+    border-right: 1px solid #BEE1FF;
     width: 25%;
   }
 }
@@ -13878,19 +13895,6 @@ a {
   /*----------- 升學專區子選單樣式 -----------*/
   .subDropdown__menu {
     width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  /*----------- 升學專區子選單樣式 -----------*/
-  .dropdown__item {
-    background-color: #0F5C9E;
-  }
-  .dropdown__itemHover {
-    color: #fff;
-  }
-  .dropdown__itemHover:hover {
-    background-color: #084477;
   }
 }
 
