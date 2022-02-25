@@ -11,7 +11,6 @@ $(document).ready(function () {
     $(this).parent().siblings().find('.nav__hover').removeClass('nav--click');
   })
 
-
   /*----------- 登入狀態轉換 -----------*/
 
 
