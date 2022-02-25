@@ -3,6 +3,10 @@
 .cartIcon {
     position: relative;
 
+    &:active {
+        color: $secondary;
+    }
+
     /*----------- 目前購物車數量 -----------*/
 
     &__alert {
