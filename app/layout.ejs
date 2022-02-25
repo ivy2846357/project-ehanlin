@@ -167,13 +167,13 @@
                   d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
               </svg>
             </a>
-            <ul class="dropdown-menu mt-0 p-0 dropdown__menu dropdown__menuPluralCol" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu mt-0 p-0 dropdown__menu" aria-labelledby="navbarDropdown">
               <!-- 巢狀子選單 -->
               <!-- 國中會考 -->
-              <ul class="list-unstyled mb-0 subDropdown__menu">
-                <li class="nav-item dropdown">
-                  <a class="nav-link px-8 mobileDropdown__hover d-flex align-items-center dropdown__link" href="#"
-                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <ul class="list-unstyled mb-0 mobileDropdown">
+                <li class="nav-item mobileDropdown__menu">
+                  <a class="nav-link px-8 mobileDropdown__item mobileDropdown__link d-flex align-items-center dropdown__link"
+                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="nav__text">國中會考</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-caret-down-fill ms-2 dropdown__arrow mobileDropdown__arrow" viewBox="0 0 16 16">
@@ -181,23 +181,21 @@
                         d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                     </svg>
                   </a>
-                  <ul class="dropdown-menu p-0 mt-0 dropdown__menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">110會考命中分析</a></li>
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">超額比序揭密</a></li>
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">會考解題專區</a></li>
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">歷屆考題下載</a></li>
+                  <ul class="dropdown-menu p-0 mt-0 mobileDropdown__item dropdown__menu"
+                    aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">110會考命中分析</a>
+                    </li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">超額比序揭密</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">會考解題專區</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">歷屆考題下載</a></li>
                   </ul>
                 </li>
               </ul>
               <!-- 高中學測 -->
-              <ul class="list-unstyled mb-0 subDropdown__menu">
-                <li class="nav-item dropdown">
-                  <a class="nav-link px-8 mobileDropdown__hover d-flex align-items-center dropdown__link" href="#"
-                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <ul class="list-unstyled mb-0 mobileDropdown">
+                <li class="nav-item mobileDropdown__menu">
+                  <a class="nav-link px-8 mobileDropdown__item mobileDropdown__hover d-flex align-items-center dropdown__link"
+                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="nav__text">高中學測</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-caret-down-fill ms-2 dropdown__arrow mobileDropdown__arrow" viewBox="0 0 16 16">
@@ -206,20 +204,17 @@
                     </svg>
                   </a>
                   <ul class="dropdown-menu p-0 mt-0 dropdown__menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">學測趨勢解密</a></li>
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">學測解題專區</a></li>
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">歷屆考題下載</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">學測趨勢解密</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">學測解題專區</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">歷屆考題下載</a></li>
                   </ul>
                 </li>
               </ul>
               <!-- 高中指考 -->
-              <ul class="list-unstyled mb-0 subDropdown__menu">
-                <li class="nav-item dropdown">
-                  <a class="nav-link px-8 mobileDropdown__hover d-flex align-items-center dropdown__link" href="#"
-                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <ul class="list-unstyled mb-0 mobileDropdown">
+                <li class="nav-item mobileDropdown__menu">
+                  <a class="nav-link px-8 mobileDropdown__item mobileDropdown__hover d-flex align-items-center dropdown__link"
+                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="nav__text">高中指考</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-caret-down-fill ms-2 dropdown__arrow mobileDropdown__arrow" viewBox="0 0 16 16">
@@ -229,15 +224,13 @@
                   </a>
                   <ul class="dropdown-menu p-0 mt-0 dropdown__menu dropdown__menuSingleCol"
                     aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">指考解題專區</a></li>
-                    <li><a class="dropdown-item dropdown__item dropdown__itemHover mobileDropdown__item"
-                        href="#">歷屆考題下載</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">指考解題專區</a></li>
+                    <li><a class="dropdown-item mobileDropdown__item mobileDropdown__subItem" href="#">歷屆考題下載</a></li>
                   </ul>
                 </li>
               </ul>
               <!-- 參考書專區 -->
-              <li><a class="dropdown-item ps-8 dropdown__item dropdown__itemHover" href="#">參考書專區</a></li>
+              <li><a class="dropdown-item ps-8 mobileDropdown__item dropdown__itemHover" href="#">參考書專區</a></li>
             </ul>
           </li>
         </div>

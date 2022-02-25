@@ -2,18 +2,6 @@
 
 .mobileDropdown {
 
-    /*----------- 選單樣式 -----------*/
-
-    &__hover {
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        color: #fff !important;
-        background-color: $primary;
-
-        &:hover {
-            background-color: $auxiliary-dark;
-        }
-    }
-
     /*----------- 箭頭樣式 -----------*/
 
     &__arrow {
@@ -23,11 +11,29 @@
     /*----------- 下層選單樣式 -----------*/
 
     &__item {
-        background-color: $auxiliary-dark;
+        padding: .5rem 1.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        color: #fff !important;
+        background-color: $primary;
+
+        &:hover {
+            background-color: $auxiliary-dark;
+        }
+    }
+
+    &__subItem {
+        background-color: #0b2f50;
         padding: 0.5rem 4.5rem;
 
         &:hover {
-            background-color: #062036 !important;
+            background-color: #00182c !important;
+        }
+    }
+
+    &__link {
+
+        &--change {
+            background-color: $auxiliary-dark;
         }
     }
 }

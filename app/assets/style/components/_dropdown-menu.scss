@@ -26,14 +26,14 @@
 
     &__item {
         padding: 1rem 1.5rem;
-        background-color: $primary;
+        background-color: #fff;
     }
 
     &__itemHover {
-        color: #fff;
+        color: $primary;
 
         &:hover {
-            background-color: $auxiliary-dark;
+            background-color: $primary;
             color: #fff;
         }
     }
@@ -79,6 +79,8 @@
         }
     }
 
+    /*----------- 升學專區子選單樣式 -----------*/
+
     .subDropdown__menu {
         width: 25%;
     }
@@ -88,7 +90,29 @@
 
 @media(max-width: 768px) {
 
+    /*----------- 升學專區子選單樣式 -----------*/
+
     .subDropdown__menu {
         width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+
+    /*----------- 升學專區子選單樣式 -----------*/
+
+    .dropdown {
+
+        &__item {
+            background-color: $primary;
+        }
+
+        &__itemHover {
+            color: #fff;
+
+            &:hover {
+                background-color: $auxiliary-dark;
+            }
+        }
     }
 }
