@@ -6,6 +6,11 @@ $(document).ready(function () {
     e.stopPropagation();
   })
 
+  $('.nav__hover').click(function (e) {
+    $(this).toggleClass('nav--click');
+    $(this).parent().siblings().find('.nav__hover').removeClass('nav--click');
+  })
+
 
   /*----------- 登入狀態轉換 -----------*/
 

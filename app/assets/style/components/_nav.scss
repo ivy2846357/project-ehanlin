@@ -12,6 +12,13 @@
         }
     }
 
+    /*----------- 電腦版 click 效果 -----------*/
+
+    &--click {
+
+        border-bottom: .5rem solid $primary;
+    }
+
     /*----------- 修改 nav-link 樣式 -----------*/
 
     &-link {
@@ -34,6 +41,10 @@
                 background-color: $primary;
             }
 
+        }
+
+        &--click {
+            border-bottom: none;
         }
 
         /*----------- 修改 nav-link 樣式 -----------*/
