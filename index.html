@@ -283,13 +283,13 @@
                     <form>
                         <div class="mb-3">
                             <label for="username" class="form-label">姓名<span class="text-emphasize">*</span></label>
-                            <input type="text" class="form-control" id="username">
+                            <input type="text" class="form-control" id="username" required>
                             <div id="usernameHelp" class="form-text">請輸入完整姓名 （例如：王小明）</div>
                         </div>
                         <div class="mb-3">
                             <label for="registerEmail" class="form-label">帳號<span
                                     class="text-emphasize">*</span></label>
-                            <input type="email" class="form-control" id="registerEmail">
+                            <input type="email" class="form-control" id="registerEmail" required>
                             <div id="emailHelp" class="form-text">請輸入電子信箱 （例如：example@gamil.com）</div>
                         </div>
                         <div class="mb-3">
@@ -298,7 +298,7 @@
                             <input type="password" class="form-control" id="registerPassword" placeholder="請輸入密碼">
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="agree">
+                            <input type="checkbox" class="form-check-input" id="agree" required>
                             <label class="form-check-label text-inactive" for="agree">我同意隱私權政策和使用者條款</label>
                         </div>
                         <button type="submit" class="btn btn-primary w-100 mb-7">註冊</button>
@@ -331,13 +331,13 @@
                     <form>
                         <div class="mb-3">
                             <label for="loginEmail" class="form-label">帳號<span class="text-emphasize">*</span></label>
-                            <input type="email" class="form-control" id="loginEmail">
+                            <input type="email" class="form-control" id="loginEmail" required>
                             <div id="emailHelp" class="form-text">請輸入電子信箱</div>
                         </div>
                         <div class="mb-3">
                             <label for="loginPassword" class="form-label">密碼<span
                                     class="text-emphasize">*</span></label>
-                            <input type="password" class="form-control" id="loginPassword" placeholder="請輸入密碼">
+                            <input type="password" class="form-control" id="loginPassword" placeholder="請輸入密碼" required>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="rememberInfo">
