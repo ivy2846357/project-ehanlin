@@ -13627,8 +13627,17 @@ a {
 }
 
 .footer__iconLink:hover {
+  -webkit-transform: translateY(-0.5rem);
+      -ms-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
   -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.footer__iconLink:active {
+  -webkit-transform: translateY(-0.3rem);
+      -ms-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
 }
 
 .footer__link {
@@ -13676,6 +13685,11 @@ a {
           box-shadow: inset 35rem 0 0 0 #FFB72F;
 }
 
+/*------------------- 登入 icon -------------------*/
+.loginIcon:active {
+  color: #BEE1FF;
+}
+
 /*------------------- 登入 icon(手機) -------------------*/
 @media (max-width: 576px) {
   /*----------- 元件縮小 -----------*/
@@ -13690,6 +13704,10 @@ a {
 .cartIcon {
   position: relative;
   /*----------- 目前購物車數量 -----------*/
+}
+
+.cartIcon:active {
+  color: #BEE1FF;
 }
 
 .cartIcon__alert {
