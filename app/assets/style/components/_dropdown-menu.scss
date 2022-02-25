@@ -54,6 +54,7 @@
         /*----------- 下拉選單 -----------*/
 
         &__menu {
+            background-color: $auxiliary-dark;
             box-shadow: none;
             border-radius: 0;
         }
@@ -63,6 +64,15 @@
         &__item {
             padding: .5rem 3rem;
             border-bottom: 1px solid rgba(0, 0, 0, .1);
+            background-color: $auxiliary-dark;
+            color: #fff !important;
+        }
+
+        &__itemHover {
+
+            &:hover {
+                background-color: #0b2f50;
+            }
         }
 
         &__link {
@@ -75,13 +85,14 @@
         /*----------- 下拉選單副標題 -----------*/
 
         &__subTitle {
-            background-color: $background-color;
+            background-color: $primary;
         }
     }
 
     /*----------- 升學專區子選單樣式 -----------*/
 
     .subDropdown__menu {
+        border-right: 1px solid $secondary;
         width: 25%;
     }
 }
@@ -94,25 +105,5 @@
 
     .subDropdown__menu {
         width: 100%;
-    }
-}
-
-@media(max-width: 576px) {
-
-    /*----------- 升學專區子選單樣式 -----------*/
-
-    .dropdown {
-
-        &__item {
-            background-color: $primary;
-        }
-
-        &__itemHover {
-            color: #fff;
-
-            &:hover {
-                background-color: $auxiliary-dark;
-            }
-        }
     }
 }

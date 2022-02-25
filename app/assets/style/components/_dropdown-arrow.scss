@@ -13,7 +13,24 @@
 
         &--change {
             transform: rotate(180deg);
-            color: #fff;
+            color: $secondary;
+        }
+    }
+}
+
+/*------------------- 導覽列下拉選單箭頭(mobile) -------------------*/
+
+@media(max-width: 1451px) {
+
+    .dropdown {
+
+        &__arrow {
+
+            /*----------- 下拉選單箭頭動畫 -----------*/
+
+            &--change {
+                color: #fff;
+            }
         }
     }
 }
